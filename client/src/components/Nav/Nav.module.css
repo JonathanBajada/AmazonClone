@@ -1,0 +1,42 @@
+.leftNav {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	background-color: black;
+	height: 60px;
+	width: 220px;
+}
+
+.homePageButton {
+	background-color: #131921;
+	height: 50px;
+	width: 100px;
+	border-width: 1;
+	border-color: #131921;
+}
+
+.buttonStyle {
+	background-color: #131921;
+	height: 50px;
+	width: 100px;
+	border-width: 1;
+	border-color: #131921;
+}
+
+.homePageIMG {
+	height: 50px;
+	width: 100px;
+	border: 1px solid black;
+}
+
+.buttonStyle:hover {
+	border-color: white;
+	border-width: 5;
+}
+
+.homePageIMG:hover {
+	border: 1px solid white;
+}
+
+.homePageIMG :hover {
+}
