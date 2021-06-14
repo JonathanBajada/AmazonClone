@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Nav.module.css';
 import amazonLogo from './img/amazonLogo.png';
-import { TiLocationOutline } from 'react-icons/ti';
+import { HiOutlineLocationMarker } from 'react-icons/hi';
 
 interface NavProps {}
 
@@ -15,8 +15,8 @@ const Nav: React.FC<NavProps> = () => {
 					<img src={amazonLogo} className={styles.homePageIMG} style={{ margin: 'auto' }} />
 
 					<div className={styles.buttonStyle} style={{ display: 'flex' }}>
-						<div style={{ alignSelf: 'center', marginLeft: '2px', marginTop: '7px' }}>
-							<TiLocationOutline size={22} color={'white'} />
+						<div style={{ alignSelf: 'center', marginLeft: '2px', marginTop: '11px' }}>
+							<HiOutlineLocationMarker size={18} color={'white'} />
 						</div>
 						<div style={{ display: 'flex', flexDirection: 'column', alignSelf: 'center' }}>
 							<span
@@ -25,7 +25,7 @@ const Nav: React.FC<NavProps> = () => {
 									fontSize: '12px',
 									fontWeight: 400,
 									lineHeight: '15px',
-									letterSpacing: '-0.5px'
+									marginLeft: '3px'
 								}}
 							>
 								Deliver to
