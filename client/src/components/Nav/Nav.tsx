@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Nav.module.css';
 import amazonLogo from './img/amazonLogo.png';
 import { HiOutlineLocationMarker } from 'react-icons/hi';
+import SearchBar from '../SearchBar/SearchBar';
 
 interface NavProps {}
 
@@ -9,7 +10,7 @@ const Nav: React.FC<NavProps> = () => {
 	return (
 		<div>
 			{/* Top Nav  */}
-			<div className={styles.topHalfNav}>
+			<div className={styles.navTopContainer}>
 				{/* Left Nav  */}
 				<div className={styles.leftNav}>
 					<img src={amazonLogo} className={styles.homePageIMG} style={{ margin: 'auto' }} />
@@ -46,9 +47,7 @@ const Nav: React.FC<NavProps> = () => {
 				</div>
 
 				{/* Search Bar  */}
-				<div style={{ alignSelf: 'center', color: 'white' }}>
-					<h1>Search</h1>
-				</div>
+				<SearchBar />
 
 				{/* Right Nav  */}
 				<div style={{ alignSelf: 'center' }}>
