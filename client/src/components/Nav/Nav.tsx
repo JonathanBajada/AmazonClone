@@ -15,15 +15,29 @@ const Nav: React.FC<NavProps> = () => {
 					<img src={amazonLogo} className={styles.homePageIMG} style={{ margin: 'auto' }} />
 
 					<div className={styles.buttonStyle} style={{ display: 'flex' }}>
-						<div style={{ alignSelf: 'center', marginLeft: '2px' }}>
-							<TiLocationOutline size={20} color={'white'} />
+						<div style={{ alignSelf: 'center', marginLeft: '2px', marginTop: '7px' }}>
+							<TiLocationOutline size={22} color={'white'} />
 						</div>
 						<div style={{ display: 'flex', flexDirection: 'column', alignSelf: 'center' }}>
-							<span style={{ color: '#ccc', fontSize: '12px', fontWeight: 400, letterSpacing: '-0.5px' }}>
+							<span
+								style={{
+									color: '#ccc',
+									fontSize: '12px',
+									fontWeight: 400,
+									lineHeight: '15px',
+									letterSpacing: '-0.5px'
+								}}
+							>
 								Deliver to
 							</span>
 							<span
-								style={{ color: 'white', fontSize: '14px', fontWeight: 400, letterSpacing: '-0.5px' }}
+								style={{
+									color: 'white',
+									fontSize: '14px',
+									fontWeight: 700,
+									letterSpacing: '-0.5px',
+									lineHeight: '15px'
+								}}
 							>
 								Canada
 							</span>
