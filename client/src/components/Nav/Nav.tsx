@@ -16,7 +16,7 @@ const Nav: React.FC<NavProps> = () => {
 					<img src={amazonLogo} className={styles.homePageIMG} style={{ margin: 'auto' }} />
 
 					<div className={styles.buttonStyle} style={{ display: 'flex' }}>
-						<div style={{ alignSelf: 'center', marginLeft: '2px', marginTop: '11px' }}>
+						<div style={{ alignSelf: 'center', marginLeft: '4px', marginTop: '11px', marginRight: '2px' }}>
 							<HiOutlineLocationMarker size={18} color={'white'} />
 						</div>
 						<div style={{ display: 'flex', flexDirection: 'column', alignSelf: 'center' }}>
@@ -26,7 +26,7 @@ const Nav: React.FC<NavProps> = () => {
 									fontSize: '12px',
 									fontWeight: 400,
 									lineHeight: '15px',
-									marginLeft: '3px'
+									marginRight: 'auto'
 								}}
 							>
 								Deliver to
@@ -37,7 +37,8 @@ const Nav: React.FC<NavProps> = () => {
 									fontSize: '14px',
 									fontWeight: 700,
 									letterSpacing: '-0.5px',
-									lineHeight: '15px'
+									lineHeight: '15px',
+									marginRight: 'auto'
 								}}
 							>
 								Canada
@@ -51,7 +52,10 @@ const Nav: React.FC<NavProps> = () => {
 
 				{/* Right Nav  */}
 				<div style={{ display: 'flex', flexDirection: 'row', marginLeft: 'auto' }}>
-					<div style={{ display: 'flex', flexDirection: 'column', alignSelf: 'center' }}>
+					<div
+						className={styles.buttonStyle}
+						style={{ display: 'flex', flexDirection: 'column', alignSelf: 'center' }}
+					>
 						<span
 							style={{
 								color: '#ccc',
@@ -75,7 +79,10 @@ const Nav: React.FC<NavProps> = () => {
 						</span>
 					</div>
 
-					<div style={{ display: 'flex', flexDirection: 'column', alignSelf: 'center' }}>
+					<div
+						className={styles.buttonStyle}
+						style={{ display: 'flex', flexDirection: 'column', alignSelf: 'center' }}
+					>
 						<span
 							style={{
 								color: '#ccc',
@@ -99,7 +106,10 @@ const Nav: React.FC<NavProps> = () => {
 						</span>
 					</div>
 
-					<div style={{ display: 'flex', flexDirection: 'column', alignSelf: 'center' }}>
+					<div
+						className={styles.buttonStyle}
+						style={{ display: 'flex', flexDirection: 'column', alignSelf: 'center' }}
+					>
 						<span
 							style={{
 								color: 'white',
