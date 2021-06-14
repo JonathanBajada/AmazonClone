@@ -1,9 +1,12 @@
 const express = require('express');
 const connectDB = require('./config/db');
+const morgan = require('morgan');
 
 const app = express();
 
 connectDB();
+
+app.use(morgan('tiny'));
 
 app.get('/', (req, res) => res.send('yo'));
 
