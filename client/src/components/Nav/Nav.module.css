@@ -25,14 +25,15 @@
 	background-color: #131921;
 	height: 50px;
 	width: 100px;
-	border-width: 1;
+
 	border-color: #131921;
 	border-style: solid;
+	border-width: 1px;
 }
 
 .buttonStyle:hover {
 	border-color: white;
-	border-width: 5;
+	border-width: 1px;
 }
 
 .homePageIMG {
