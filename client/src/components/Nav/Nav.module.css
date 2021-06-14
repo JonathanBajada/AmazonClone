@@ -1,8 +1,14 @@
+.topHalfNav {
+	height: 60px;
+	background-color: #131921;
+	display: flex;
+}
+
 .leftNav {
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
-	background-color: black;
+	background-color: #131921;
 	height: 60px;
 	width: 220px;
 }
@@ -21,12 +27,7 @@
 	width: 100px;
 	border-width: 1;
 	border-color: #131921;
-}
-
-.homePageIMG {
-	height: 50px;
-	width: 100px;
-	border: 1px solid black;
+	border-style: solid;
 }
 
 .buttonStyle:hover {
@@ -34,9 +35,12 @@
 	border-width: 5;
 }
 
-.homePageIMG:hover {
-	border: 1px solid white;
+.homePageIMG {
+	height: 50px;
+	width: 100px;
+	border: 1px solid #131921;
 }
 
-.homePageIMG :hover {
+.homePageIMG:hover {
+	border: 1px solid white;
 }

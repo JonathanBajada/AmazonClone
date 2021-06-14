@@ -8,14 +8,15 @@ const Nav: React.FC<NavProps> = () => {
 	return (
 		<div>
 			{/* Top Nav  */}
-			<div style={{ height: 60, backgroundColor: '#131921', display: 'flex' }}>
+			<div className={styles.topHalfNav}>
 				{/* Left Nav  */}
 				<div className={styles.leftNav}>
 					<img src={amazonLogo} className={styles.homePageIMG} style={{ margin: 'auto' }} />
 
-					<button className={styles.buttonStyle}>
-						{/*<img src={amazonLogo} className={styles.homePageIMG} />*/}
-					</button>
+					<div className={styles.buttonStyle} style={{ display: 'flex', flexDirection: 'column' }}>
+						<span style={{ color: '#ccc', fontSize: '12px' }}>Deliver to</span>
+						<span style={{ color: 'white', fontSize: '14px' }}>Canada</span>
+					</div>
 				</div>
 
 				{/* Search Bar  */}
