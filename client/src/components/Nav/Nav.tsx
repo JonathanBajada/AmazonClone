@@ -50,7 +50,7 @@ const Nav: React.FC<NavProps> = () => {
 				<SearchBar />
 
 				{/* Right Nav  */}
-				<div style={{ alignSelf: 'center' }}>
+				<div style={{ alignSelf: 'center', marginLeft: 'auto' }}>
 					<button>Language</button>
 					<button>Sign In</button>
 					<button>Deliver</button>
