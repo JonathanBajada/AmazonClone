@@ -64,23 +64,25 @@ const Nav: React.FC<NavProps> = () => {
 				<SearchBar />
 
 				{/* Right Nav  */}
-				<div style={{ display: 'flex', flexDirection: 'row', marginLeft: 'auto' }}>
+				<div className={styles.rightNav}>
 					<div
 						className={styles.buttonStyle}
 						style={{
 							display: 'flex',
 							flexDirection: 'column',
 							alignSelf: 'center',
-							paddingLeft: '4px',
-							paddingRight: '4px'
+							paddingLeft: '6px',
+							paddingRight: '6px'
 						}}
 					>
 						<span
 							style={{
+								marginTop: 'auto',
 								marginRight: 'auto',
-								color: '#ccc',
+								color: 'white',
+
 								fontSize: '12px',
-								fontWeight: 400,
+								fontWeight: 600,
 								lineHeight: '15px'
 							}}
 						>
@@ -92,7 +94,8 @@ const Nav: React.FC<NavProps> = () => {
 								fontSize: '14px',
 								fontWeight: 700,
 								letterSpacing: '-0.5px',
-								lineHeight: '15px'
+								lineHeight: '15px',
+								marginBottom: 'auto'
 							}}
 						>
 							Accounts & Lists
@@ -105,16 +108,18 @@ const Nav: React.FC<NavProps> = () => {
 							display: 'flex',
 							flexDirection: 'column',
 							alignSelf: 'center',
-							paddingLeft: '4px',
-							paddingRight: '4px'
+							paddingLeft: '6px',
+							paddingRight: '6px'
 						}}
 					>
 						<span
 							style={{
+								marginTop: 'auto',
 								marginRight: 'auto',
-								color: '#ccc',
+								color: 'white',
+
 								fontSize: '12px',
-								fontWeight: 400,
+								fontWeight: 600,
 								lineHeight: '15px'
 							}}
 						>
@@ -126,7 +131,8 @@ const Nav: React.FC<NavProps> = () => {
 								fontSize: '14px',
 								fontWeight: 700,
 								letterSpacing: '-0.5px',
-								lineHeight: '15px'
+								lineHeight: '15px',
+								marginBottom: 'auto'
 							}}
 						>
 							& Orders
@@ -139,12 +145,14 @@ const Nav: React.FC<NavProps> = () => {
 							display: 'flex',
 							flexDirection: 'column',
 							alignSelf: 'center',
-							paddingLeft: '4px',
-							paddingRight: '4px'
+							paddingLeft: '6px',
+							paddingRight: '6px'
 						}}
 					>
 						<span
 							style={{
+								marginTop: 'auto',
+								marginBottom: 'auto',
 								color: 'white',
 								fontSize: '14px',
 								fontWeight: 700,
