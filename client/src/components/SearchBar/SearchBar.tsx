@@ -22,6 +22,9 @@ const SearchBar: React.FC = () => {
 						onClick={() => {
 							setBorderColor('#FF9900');
 						}}
+						onBlur={() => {
+							setBorderColor('#131921');
+						}}
 					/>
 					<button
 						style={{
