@@ -15,8 +15,21 @@ const Nav: React.FC<NavProps> = () => {
 				<div className={styles.leftNav}>
 					<img src={amazonLogo} className={styles.homePageIMG} style={{ margin: 'auto' }} />
 
-					<div className={styles.buttonStyle} style={{ display: 'flex' }}>
-						<div style={{ alignSelf: 'center', marginLeft: '4px', marginTop: '11px', marginRight: '2px' }}>
+					<div
+						className={styles.buttonStyle}
+						style={{
+							display: 'flex',
+							paddingLeft: '4px',
+							paddingRight: '8px'
+						}}
+					>
+						<div
+							style={{
+								alignSelf: 'center',
+								marginTop: '11px',
+								marginRight: '2px'
+							}}
+						>
 							<HiOutlineLocationMarker size={18} color={'white'} />
 						</div>
 						<div style={{ display: 'flex', flexDirection: 'column', alignSelf: 'center' }}>
