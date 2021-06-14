@@ -20,7 +20,8 @@ const Nav: React.FC<NavProps> = () => {
 						style={{
 							display: 'flex',
 							paddingLeft: '4px',
-							paddingRight: '8px'
+							paddingRight: '8px',
+							flexShrink: 0
 						}}
 					>
 						<div
