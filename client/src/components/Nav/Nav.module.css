@@ -24,7 +24,7 @@
 .buttonStyle {
 	background-color: #131921;
 	height: 50px;
-
+	flex-shrink: 0;
 	margin-right: 4px;
 	border-color: #131921;
 	border-style: solid;

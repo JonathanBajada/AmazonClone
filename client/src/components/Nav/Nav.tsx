@@ -20,8 +20,7 @@ const Nav: React.FC<NavProps> = () => {
 						style={{
 							display: 'flex',
 							paddingLeft: '4px',
-							paddingRight: '8px',
-							flexShrink: 0
+							paddingRight: '8px'
 						}}
 					>
 						<div
@@ -68,10 +67,17 @@ const Nav: React.FC<NavProps> = () => {
 				<div style={{ display: 'flex', flexDirection: 'row', marginLeft: 'auto' }}>
 					<div
 						className={styles.buttonStyle}
-						style={{ display: 'flex', flexDirection: 'column', alignSelf: 'center' }}
+						style={{
+							display: 'flex',
+							flexDirection: 'column',
+							alignSelf: 'center',
+							paddingLeft: '4px',
+							paddingRight: '4px'
+						}}
 					>
 						<span
 							style={{
+								marginRight: 'auto',
 								color: '#ccc',
 								fontSize: '12px',
 								fontWeight: 400,
@@ -95,10 +101,17 @@ const Nav: React.FC<NavProps> = () => {
 
 					<div
 						className={styles.buttonStyle}
-						style={{ display: 'flex', flexDirection: 'column', alignSelf: 'center' }}
+						style={{
+							display: 'flex',
+							flexDirection: 'column',
+							alignSelf: 'center',
+							paddingLeft: '4px',
+							paddingRight: '4px'
+						}}
 					>
 						<span
 							style={{
+								marginRight: 'auto',
 								color: '#ccc',
 								fontSize: '12px',
 								fontWeight: 400,
@@ -122,7 +135,13 @@ const Nav: React.FC<NavProps> = () => {
 
 					<div
 						className={styles.buttonStyle}
-						style={{ display: 'flex', flexDirection: 'column', alignSelf: 'center' }}
+						style={{
+							display: 'flex',
+							flexDirection: 'column',
+							alignSelf: 'center',
+							paddingLeft: '4px',
+							paddingRight: '4px'
+						}}
 					>
 						<span
 							style={{
