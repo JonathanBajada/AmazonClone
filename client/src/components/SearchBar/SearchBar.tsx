@@ -12,9 +12,9 @@ const SearchBar: React.FC = () => {
 				alignSelf: 'center',
 				width: '100%',
 				flexShrink: 35,
-				height: '44px',
+				height: '47px',
 				boxSizing: 'border-box',
-				borderRadius: '4px',
+				borderRadius: '5px',
 				backgroundColor: borderColor
 			}}
 		>
@@ -26,7 +26,7 @@ const SearchBar: React.FC = () => {
 					height: '35px',
 					borderStyle: 'solid',
 					borderColor: '#F3F3F3',
-					marginLeft: '4px',
+					marginLeft: '2px',
 					outline: 'none',
 					borderTopLeftRadius: '4px',
 					borderBottomLeftRadius: '4px',
@@ -37,7 +37,7 @@ const SearchBar: React.FC = () => {
 					style={{
 						marginLeft: '4px',
 						alignSelf: 'center',
-						fontSize: '13.3333px',
+						fontSize: '14px',
 						fontWeight: 400,
 						fontFamily: 'Arial'
 					}}
@@ -79,6 +79,7 @@ const SearchBar: React.FC = () => {
 					borderColor: '#FEBD68',
 					paddingLeft: '4px',
 					paddingRight: '4px',
+					marginRight: '2px',
 					outline: 'none',
 					borderTopRightRadius: '4px',
 					borderBottomRightRadius: '4px',
