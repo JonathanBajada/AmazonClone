@@ -46,7 +46,7 @@ const SearchBar: React.FC = () => {
 					All
 				</span>
 				<div style={{ alignSelf: 'center', marginLeft: '4px', marginRight: '4px' }}>
-					<AiFillCaretDown size={10} color={'gray'} />
+					<AiFillCaretDown size={10} color={'#666666'} />
 				</div>
 			</div>
 			<input
