@@ -16,6 +16,23 @@ const SearchBar: React.FC = () => {
 				backgroundColor: borderColor
 			}}
 		>
+			<button
+				style={{
+					alignSelf: 'center',
+					backgroundColor: '#F3F3F3',
+					height: '36px',
+					borderStyle: 'solid',
+					borderColor: '#F3F3F3',
+					marginLeft: '4px',
+					outline: 'none',
+					borderTopLeftRadius: '4px',
+					borderBottomLeftRadius: '4px',
+					cursor: 'pointer'
+				}}
+				type="submit"
+			>
+				All
+			</button>
 			<input
 				style={{
 					height: '30px',
@@ -46,7 +63,8 @@ const SearchBar: React.FC = () => {
 					marginRight: '4px',
 					outline: 'none',
 					borderTopRightRadius: '4px',
-					borderBottomRightRadius: '4px'
+					borderBottomRightRadius: '4px',
+					cursor: 'pointer'
 				}}
 				type="submit"
 			>

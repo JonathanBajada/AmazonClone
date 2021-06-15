@@ -13,7 +13,14 @@ const Nav: React.FC<NavProps> = () => {
 			<div className={styles.navTopContainer}>
 				{/* Left Nav  */}
 				<div className={styles.leftNav}>
-					<img src={amazonLogo} className={styles.homePageIMG} style={{ margin: 'auto' }} />
+					<img
+						onClick={() => {
+							console.log('hi');
+						}}
+						src={amazonLogo}
+						className={styles.homePageIMG}
+						style={{ margin: 'auto' }}
+					/>
 
 					<div
 						className={styles.buttonStyle}
@@ -21,6 +28,9 @@ const Nav: React.FC<NavProps> = () => {
 							display: 'flex',
 							paddingLeft: '4px',
 							paddingRight: '8px'
+						}}
+						onClick={() => {
+							console.log('hi');
 						}}
 					>
 						<div
