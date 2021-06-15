@@ -64,15 +64,15 @@ const Nav: React.FC<NavProps> = () => {
 				<SearchBar />
 
 				{/* Right Nav  */}
-				<div className={styles.rightNav}>
+				<div className={styles.rightNav} style={{}}>
 					<div
 						className={styles.buttonStyle}
 						style={{
 							display: 'flex',
 							flexDirection: 'column',
 							alignSelf: 'center',
-							paddingLeft: '6px',
-							paddingRight: '6px'
+							paddingLeft: '10px',
+							paddingRight: '10px'
 						}}
 					>
 						<span
@@ -108,8 +108,8 @@ const Nav: React.FC<NavProps> = () => {
 							display: 'flex',
 							flexDirection: 'column',
 							alignSelf: 'center',
-							paddingLeft: '6px',
-							paddingRight: '6px'
+							paddingLeft: '10px',
+							paddingRight: '10px'
 						}}
 					>
 						<span
@@ -145,8 +145,8 @@ const Nav: React.FC<NavProps> = () => {
 							display: 'flex',
 							flexDirection: 'column',
 							alignSelf: 'center',
-							paddingLeft: '6px',
-							paddingRight: '6px'
+							paddingLeft: '10px',
+							paddingRight: '10px'
 						}}
 					>
 						<span
@@ -160,7 +160,7 @@ const Nav: React.FC<NavProps> = () => {
 								lineHeight: '15px'
 							}}
 						>
-							Carts
+							Cart
 						</span>
 					</div>
 				</div>
