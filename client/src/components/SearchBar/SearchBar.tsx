@@ -15,7 +15,8 @@ const SearchBar: React.FC = () => {
 				height: '47px',
 				boxSizing: 'border-box',
 				borderRadius: '5px',
-				backgroundColor: borderColor
+				backgroundColor: borderColor,
+				overflow: 'none'
 			}}
 		>
 			<div
