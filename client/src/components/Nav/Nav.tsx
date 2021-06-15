@@ -1,7 +1,10 @@
 import React from 'react';
 import styles from './Nav.module.css';
 import amazonLogo from './img/amazonLogo.png';
+import usaFlag from './img/usa.jpg';
 import { HiOutlineLocationMarker } from 'react-icons/hi';
+import { AiFillCaretDown } from 'react-icons/ai';
+
 import SearchBar from '../SearchBar/SearchBar';
 
 interface NavProps {}
@@ -75,6 +78,24 @@ const Nav: React.FC<NavProps> = () => {
 
 				{/* Right Nav  */}
 				<div className={styles.rightNav} style={{}}>
+					<div
+						className={styles.buttonStyle}
+						style={{
+							display: 'flex',
+							flexDirection: 'row',
+							alignSelf: 'center',
+							paddingLeft: '10px',
+							paddingRight: '10px',
+							marginLeft: '12px'
+						}}
+					>
+						<div style={{ marginTop: 'auto', marginBottom: '8px', marginLeft: '4px' }}>
+							<img src={usaFlag} style={{ width: '22px', height: '15px' }} />
+						</div>
+						<div style={{ marginTop: 'auto', marginBottom: '6px', marginLeft: '4px' }}>
+							<AiFillCaretDown color={'#A7ACB1'} size={12} />
+						</div>
+					</div>
 					<div
 						className={styles.buttonStyle}
 						style={{
