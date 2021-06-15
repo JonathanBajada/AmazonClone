@@ -100,37 +100,42 @@ const Nav: React.FC<NavProps> = () => {
 						className={styles.buttonStyle}
 						style={{
 							display: 'flex',
-							flexDirection: 'column',
+							flexDirection: 'row',
 							alignSelf: 'center',
 							paddingLeft: '10px',
 							paddingRight: '10px'
 						}}
 					>
-						<span
-							style={{
-								marginTop: 'auto',
-								marginRight: 'auto',
-								color: 'white',
+						<div style={{ display: 'flex', flexDirection: 'column' }}>
+							<span
+								style={{
+									marginTop: 'auto',
+									marginRight: 'auto',
+									color: 'white',
 
-								fontSize: '12px',
-								fontWeight: 600,
-								lineHeight: '15px'
-							}}
-						>
-							Hello, Sign in
-						</span>
-						<span
-							style={{
-								color: 'white',
-								fontSize: '14px',
-								fontWeight: 700,
-								letterSpacing: '-0.5px',
-								lineHeight: '15px',
-								marginBottom: 'auto'
-							}}
-						>
-							Accounts & Lists
-						</span>
+									fontSize: '12px',
+									fontWeight: 600,
+									lineHeight: '15px'
+								}}
+							>
+								Hello, Sign in
+							</span>
+							<span
+								style={{
+									color: 'white',
+									fontSize: '14px',
+									fontWeight: 700,
+									letterSpacing: '-0.5px',
+									lineHeight: '15px',
+									marginBottom: 'auto'
+								}}
+							>
+								Accounts & Lists
+							</span>
+						</div>
+						<div style={{ marginTop: 'auto', marginBottom: '6px', marginLeft: '4px' }}>
+							<AiFillCaretDown color={'#A7ACB1'} size={12} />
+						</div>
 					</div>
 
 					<div
