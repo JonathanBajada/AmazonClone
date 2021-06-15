@@ -166,10 +166,12 @@ const Nav: React.FC<NavProps> = () => {
 							paddingRight: '10px'
 						}}
 					>
+						<span style={{ color: '#FF9900', marginTop: 'auto', fontWeight: 800, fontSize: '15px' }}>
+							0
+						</span>
 						<span
 							className={styles.buttonTitle}
 							style={{
-								marginTop: 'auto',
 								marginBottom: '10px'
 							}}
 						>
