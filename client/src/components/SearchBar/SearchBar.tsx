@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { AiFillCaretDown } from 'react-icons/ai';
+import { GoSearch } from 'react-icons/go';
 
 const SearchBar: React.FC = () => {
 	const [ borderColor, setBorderColor ] = useState('#FF9900');
@@ -22,7 +23,7 @@ const SearchBar: React.FC = () => {
 					display: 'flex',
 					alignSelf: 'center',
 					backgroundColor: '#F3F3F3',
-					height: '30px',
+					height: '35px',
 					borderStyle: 'solid',
 					borderColor: '#F3F3F3',
 					marginLeft: '4px',
@@ -49,7 +50,7 @@ const SearchBar: React.FC = () => {
 			</div>
 			<input
 				style={{
-					height: '30px',
+					height: '35px',
 					alignSelf: 'center',
 					borderStyle: 'solid',
 					borderColor: 'white',
@@ -67,23 +68,35 @@ const SearchBar: React.FC = () => {
 					setBorderColor('#131921');
 				}}
 			/>
-			<button
+
+			<div
 				style={{
+					display: 'flex',
 					alignSelf: 'center',
 					backgroundColor: '#FEBD68',
-					height: '36px',
+					height: '35px',
 					borderStyle: 'solid',
 					borderColor: '#FEBD68',
-					marginRight: '4px',
+					paddingLeft: '4px',
+					paddingRight: '4px',
 					outline: 'none',
 					borderTopRightRadius: '4px',
 					borderBottomRightRadius: '4px',
 					cursor: 'pointer'
 				}}
-				type="submit"
 			>
-				Search
-			</button>
+				<div
+					style={{
+						alignSelf: 'center',
+						marginTop: '5px',
+						marginLeft: '4px',
+						marginRight: '4px',
+						cursor: 'pointer'
+					}}
+				>
+					<GoSearch size={20} color={'black'} />
+				</div>
+			</div>
 		</div>
 	);
 };
