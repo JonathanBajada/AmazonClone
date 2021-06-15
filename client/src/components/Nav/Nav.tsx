@@ -188,7 +188,7 @@ const Nav: React.FC<NavProps> = () => {
 						<span
 							style={{
 								marginTop: 'auto',
-								marginBottom: 'auto',
+								marginBottom: '10px',
 								color: 'white',
 								fontSize: '14px',
 								fontWeight: 700,

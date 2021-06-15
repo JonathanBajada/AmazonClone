@@ -11,7 +11,7 @@ const SearchBar: React.FC = () => {
 				display: 'flex',
 				alignSelf: 'center',
 				width: '100%',
-				flexShrink: 35,
+				flexShrink: 100,
 				height: '47px',
 				boxSizing: 'border-box',
 				borderRadius: '5px',
