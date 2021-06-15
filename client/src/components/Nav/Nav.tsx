@@ -4,6 +4,7 @@ import amazonLogo from './img/amazonLogo.png';
 import usaFlag from './img/usa.jpg';
 import { HiOutlineLocationMarker } from 'react-icons/hi';
 import { AiFillCaretDown } from 'react-icons/ai';
+import { RiShoppingCartLine } from 'react-icons/ri';
 
 import SearchBar from '../SearchBar/SearchBar';
 
@@ -160,23 +161,33 @@ const Nav: React.FC<NavProps> = () => {
 						className={styles.buttonStyle}
 						style={{
 							display: 'flex',
-							flexDirection: 'column',
+							flexDirection: 'row',
 							alignSelf: 'center',
 							paddingLeft: '10px',
 							paddingRight: '10px'
 						}}
 					>
-						<span style={{ color: '#FF9900', marginTop: 'auto', fontWeight: 800, fontSize: '15px' }}>
-							0
-						</span>
-						<span
-							className={styles.buttonTitle}
+						<div style={{ marginTop: 'auto', marginBottom: '6px', marginRight: '2px' }}>
+							<RiShoppingCartLine color={'white'} size={34} />
+						</div>
+						<div
 							style={{
-								marginBottom: '10px'
+								display: 'flex',
+								flexDirection: 'column'
 							}}
 						>
-							Cart
-						</span>
+							<span style={{ color: '#FF9900', marginTop: 'auto', fontWeight: 800, fontSize: '15px' }}>
+								0
+							</span>
+							<span
+								className={styles.buttonTitle}
+								style={{
+									marginBottom: '9px'
+								}}
+							>
+								Cart
+							</span>
+						</div>
 					</div>
 				</div>
 			</div>
