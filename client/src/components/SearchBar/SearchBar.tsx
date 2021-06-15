@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { AiFillCaretDown } from 'react-icons/ai';
 
 const SearchBar: React.FC = () => {
 	const [ borderColor, setBorderColor ] = useState('#FF9900');
@@ -16,11 +17,12 @@ const SearchBar: React.FC = () => {
 				backgroundColor: borderColor
 			}}
 		>
-			<button
+			<div
 				style={{
+					display: 'flex',
 					alignSelf: 'center',
 					backgroundColor: '#F3F3F3',
-					height: '36px',
+					height: '30px',
 					borderStyle: 'solid',
 					borderColor: '#F3F3F3',
 					marginLeft: '4px',
@@ -29,10 +31,22 @@ const SearchBar: React.FC = () => {
 					borderBottomLeftRadius: '4px',
 					cursor: 'pointer'
 				}}
-				type="submit"
 			>
-				All
-			</button>
+				<span
+					style={{
+						marginLeft: '4px',
+						alignSelf: 'center',
+						fontSize: '13.3333px',
+						fontWeight: 400,
+						fontFamily: 'Arial'
+					}}
+				>
+					All
+				</span>
+				<div style={{ alignSelf: 'center', marginLeft: '4px', marginRight: '4px' }}>
+					<AiFillCaretDown size={10} color={'gray'} />
+				</div>
+			</div>
 			<input
 				style={{
 					height: '30px',
