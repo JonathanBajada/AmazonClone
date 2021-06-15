@@ -25,15 +25,6 @@
 	padding-right: 1px;
 }
 
-.homePageButton {
-	background-color: #131921;
-	height: 50px;
-	width: 100px;
-	border-width: 1;
-	border-color: #131921;
-	cursor: pointer;
-}
-
 .buttonStyle {
 	background-color: #131921;
 	height: 50px;
@@ -48,6 +39,15 @@
 .buttonStyle:hover {
 	border-color: white;
 	border-width: 1px;
+}
+
+.buttonTitle {
+	color: white;
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: -0.5px;
+	line-height: 15px;
+	margin-right: auto;
 }
 
 .homePageIMG {

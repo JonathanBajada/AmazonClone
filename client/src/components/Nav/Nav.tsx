@@ -57,18 +57,7 @@ const Nav: React.FC<NavProps> = () => {
 							>
 								Deliver to
 							</span>
-							<span
-								style={{
-									color: 'white',
-									fontSize: '14px',
-									fontWeight: 700,
-									letterSpacing: '-0.5px',
-									lineHeight: '15px',
-									marginRight: 'auto'
-								}}
-							>
-								Canada
-							</span>
+							<span className={styles.buttonTitle}>Canada</span>
 						</div>
 					</div>
 				</div>
@@ -121,12 +110,8 @@ const Nav: React.FC<NavProps> = () => {
 								Hello, Sign in
 							</span>
 							<span
+								className={styles.buttonTitle}
 								style={{
-									color: 'white',
-									fontSize: '14px',
-									fontWeight: 700,
-									letterSpacing: '-0.5px',
-									lineHeight: '15px',
 									marginBottom: 'auto'
 								}}
 							>
@@ -162,12 +147,8 @@ const Nav: React.FC<NavProps> = () => {
 							Returns
 						</span>
 						<span
+							className={styles.buttonTitle}
 							style={{
-								color: 'white',
-								fontSize: '14px',
-								fontWeight: 700,
-								letterSpacing: '-0.5px',
-								lineHeight: '15px',
 								marginBottom: 'auto'
 							}}
 						>
@@ -186,14 +167,10 @@ const Nav: React.FC<NavProps> = () => {
 						}}
 					>
 						<span
+							className={styles.buttonTitle}
 							style={{
 								marginTop: 'auto',
-								marginBottom: '10px',
-								color: 'white',
-								fontSize: '14px',
-								fontWeight: 700,
-								letterSpacing: '-0.5px',
-								lineHeight: '15px'
+								marginBottom: '10px'
 							}}
 						>
 							Cart
