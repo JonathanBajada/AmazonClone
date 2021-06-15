@@ -5,7 +5,6 @@ import usaFlag from './img/usa.jpg';
 import { HiOutlineLocationMarker } from 'react-icons/hi';
 import { AiFillCaretDown } from 'react-icons/ai';
 import { RiShoppingCartLine } from 'react-icons/ri';
-
 import SearchBar from '../SearchBar/SearchBar';
 
 interface NavProps {}
@@ -139,7 +138,6 @@ const Nav: React.FC<NavProps> = () => {
 								marginTop: 'auto',
 								marginRight: 'auto',
 								color: 'white',
-
 								fontSize: '12px',
 								fontWeight: 600,
 								lineHeight: '15px'

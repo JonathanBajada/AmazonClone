@@ -1,37 +1,26 @@
 import React, { useState } from 'react';
 import { AiFillCaretDown } from 'react-icons/ai';
 import { GoSearch } from 'react-icons/go';
+import styles from './SearchBar.module.css';
 
 const SearchBar: React.FC = () => {
 	const [ borderColor, setBorderColor ] = useState('#FF9900');
 
 	return (
 		<div
+			className={styles.container}
 			style={{
-				display: 'flex',
-				alignSelf: 'center',
-				width: '100%',
-				flexShrink: 100,
-				height: '47px',
-				boxSizing: 'border-box',
-				borderRadius: '5px',
-				backgroundColor: borderColor,
-				overflow: 'none'
+				backgroundColor: borderColor
 			}}
 		>
 			<div
+				className={styles.buttonContainer}
 				style={{
-					display: 'flex',
-					alignSelf: 'center',
 					backgroundColor: '#F3F3F3',
-					height: '35px',
-					borderStyle: 'solid',
 					borderColor: '#F3F3F3',
 					marginLeft: '3px',
-					outline: 'none',
 					borderTopLeftRadius: '4px',
-					borderBottomLeftRadius: '4px',
-					cursor: 'pointer'
+					borderBottomLeftRadius: '4px'
 				}}
 			>
 				<span
@@ -71,20 +60,16 @@ const SearchBar: React.FC = () => {
 			/>
 
 			<div
+				className={styles.buttonContainer}
 				style={{
-					display: 'flex',
-					alignSelf: 'center',
 					backgroundColor: '#FEBD68',
-					height: '35px',
 					borderStyle: 'solid',
 					borderColor: '#FEBD68',
 					paddingLeft: '4px',
 					paddingRight: '4px',
 					marginRight: '3px',
-					outline: 'none',
 					borderTopRightRadius: '4px',
-					borderBottomRightRadius: '4px',
-					cursor: 'pointer'
+					borderBottomRightRadius: '4px'
 				}}
 			>
 				<div
