@@ -10,7 +10,7 @@ const SearchBar: React.FC = () => {
 				alignSelf: 'center',
 				width: '100%',
 				flexShrink: 35,
-				height: '45px',
+				height: '44px',
 				boxSizing: 'border-box',
 				borderRadius: '4px',
 				backgroundColor: borderColor
@@ -39,11 +39,14 @@ const SearchBar: React.FC = () => {
 			<button
 				style={{
 					alignSelf: 'center',
-					backgroundColor: '#FF9900',
+					backgroundColor: '#FEBD68',
 					height: '36px',
 					borderStyle: 'solid',
-					borderColor: '#FF9900',
-					outline: 'none'
+					borderColor: '#FEBD68',
+					marginRight: '4px',
+					outline: 'none',
+					borderTopRightRadius: '4px',
+					borderBottomRightRadius: '4px'
 				}}
 				type="submit"
 			>
