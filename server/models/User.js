@@ -25,4 +25,6 @@ const UserSchema = new mongoose.Schema({
 
 UserSchema.plugin(uniqueValidator, {message: 'is already taken.'});
 
-mongoose.model('user', UserSchema);
+const User = mongoose.model('User', UserSchema);
+
+module.exports = User;

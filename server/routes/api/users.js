@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 // Load User Model
-const User = require('../../models/User');
+const User = require('../../models/user');
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
