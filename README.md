@@ -1,2 +1,2 @@
 # AmazonClone
-A clone of www.amazon.com website using the MERN stack.
+A clone of www.amazon.com using the MERN stack.
