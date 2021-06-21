@@ -180,7 +180,15 @@ const Nav: React.FC<NavProps> = () => {
 								flexDirection: 'column'
 							}}
 						>
-							<span style={{ color: '#FF9900', marginTop: 'auto', fontWeight: 800, fontSize: '15px' }}>
+							<span
+								style={{
+									color: '#FF9900',
+									alignSelf: 'center',
+									marginTop: 'auto',
+									fontWeight: 800,
+									fontSize: '15px'
+								}}
+							>
 								0
 							</span>
 							<span

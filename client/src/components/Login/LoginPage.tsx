@@ -5,6 +5,8 @@ import logo from './img/amazonLogoWhite.jpeg';
 import styles from './LoginPage.module.css';
 
 const LoginPage = () => {
+	const [ borderColor, setBorderColor ] = useState('#a6a6a6');
+
 	return (
 		<Fragment>
 			<div
@@ -37,20 +39,24 @@ const LoginPage = () => {
 
 						<div style={{ marginBottom: '14px' }}>
 							<label>Email or phone number</label>
+
 							<input
+								onFocus={() => setBorderColor('#e77600')}
+								onBlur={() => setBorderColor('#a6a6a6')}
+								maxLength={128}
 								className={styles.inputText}
 								style={{
 									display: 'block',
 									height: '23px',
-									borderRadius: '2px',
+									borderRadius: '3px',
 									padding: '3px 7px 3px 7px',
-									lineHeight: 'normal',
-									width: '280px',
-									border: '1px solid #a6a6a6',
+									//lineHeight: 'normal',
+									border: ' 1px solid',
+									width: '279.844px',
+									borderColor: borderColor,
 									boxShadow: '0 1px 0 rgb(255 255 255 / 50%), 0 1px 0 rgb(0 0 0 / 7%) inset',
 									outline: '0',
 									borderTopColor: '#949494;'
-									//borderColor: '#e77600'
 								}}
 								type="email"
 								name="email"
@@ -64,11 +70,11 @@ const LoginPage = () => {
 								borderRadius: '2px',
 								padding: '3px 7px 3px 7px',
 								lineHeight: 'normal',
-								width: '280px',
+								width: '99.948%',
 								border: '1px solid #a6a6a6',
 								boxShadow: '0 1px 0 rgb(255 255 255 / 50%), 0 1px 0 rgb(0 0 0 / 7%) inset',
 								outline: '0',
-								borderTopColor: '#949494;',
+								//borderTopColor: '#949494;',
 								borderColor: '#e77600'
 							}}
 							type="submit"
