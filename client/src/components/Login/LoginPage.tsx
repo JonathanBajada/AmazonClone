@@ -1,12 +1,19 @@
-import React, { Fragment } from 'react';
+import React, { useEffect, useState, Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import './LoginPage.module.css';
+import logo from './img/amazonLogoWhite.jpeg';
 import styles from './LoginPage.module.css';
 
 const LoginPage = () => {
 	return (
 		<Fragment>
-			<div className={styles.container} style={{ display: 'flex', justifyContent: 'center' }}>
+			<div
+				className={styles.container}
+				style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column' }}
+			>
+				<Link style={{ alignSelf: 'center' }} to={'/'}>
+					<img src={logo} style={{ width: '200px', height: '75px' }} />
+				</Link>
 				<div
 					style={{
 						display: 'flex',
@@ -42,8 +49,8 @@ const LoginPage = () => {
 									border: '1px solid #a6a6a6',
 									boxShadow: '0 1px 0 rgb(255 255 255 / 50%), 0 1px 0 rgb(0 0 0 / 7%) inset',
 									outline: '0',
-									borderTopColor: '#949494;',
-									borderColor: '#e77600'
+									borderTopColor: '#949494;'
+									//borderColor: '#e77600'
 								}}
 								type="email"
 								name="email"
