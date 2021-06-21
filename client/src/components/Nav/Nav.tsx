@@ -5,7 +5,8 @@ import usaFlag from './img/usa.jpg';
 import { HiOutlineLocationMarker } from 'react-icons/hi';
 import { AiFillCaretDown } from 'react-icons/ai';
 import { RiShoppingCartLine } from 'react-icons/ri';
-import SearchBar from '../SearchBar/SearchBar';
+import { Link } from 'react-router-dom';
+import SearchBar from './components/SearchBar/SearchBar';
 
 interface NavProps {}
 
@@ -16,14 +17,16 @@ const Nav: React.FC<NavProps> = () => {
 			<div className={styles.navTopContainer}>
 				{/* Left Nav  */}
 				<div className={styles.leftNav}>
-					<img
-						onClick={() => {
-							console.log('hi');
-						}}
-						src={amazonLogo}
-						className={styles.homePageIMG}
-						style={{ margin: 'auto' }}
-					/>
+					<Link to={'/'}>
+						<img
+							onClick={() => {
+								console.log('hi');
+							}}
+							src={amazonLogo}
+							className={styles.homePageIMG}
+							style={{ margin: 'auto' }}
+						/>
+					</Link>
 
 					<div
 						className={styles.buttonStyle}
@@ -95,29 +98,31 @@ const Nav: React.FC<NavProps> = () => {
 							paddingRight: '10px'
 						}}
 					>
-						<div style={{ display: 'flex', flexDirection: 'column' }}>
-							<span
-								style={{
-									marginTop: 'auto',
-									marginRight: 'auto',
-									color: 'white',
+						<Link to={'/signin'} style={{ alignSelf: 'center', textDecoration: 'none' }}>
+							<div style={{ display: 'flex', flexDirection: 'column' }}>
+								<span
+									style={{
+										marginTop: 'auto',
+										marginRight: 'auto',
+										color: 'white',
 
-									fontSize: '12px',
-									fontWeight: 600,
-									lineHeight: '15px'
-								}}
-							>
-								Hello, Sign in
-							</span>
-							<span
-								className={styles.buttonTitle}
-								style={{
-									marginBottom: 'auto'
-								}}
-							>
-								Accounts & Lists
-							</span>
-						</div>
+										fontSize: '12px',
+										fontWeight: 600,
+										lineHeight: '15px'
+									}}
+								>
+									Hello, Sign in
+								</span>
+								<span
+									className={styles.buttonTitle}
+									style={{
+										marginBottom: 'auto'
+									}}
+								>
+									Accounts & Lists
+								</span>
+							</div>
+						</Link>
 						<div style={{ marginTop: 'auto', marginBottom: '6px', marginLeft: '4px' }}>
 							<AiFillCaretDown color={'#A7ACB1'} size={12} />
 						</div>

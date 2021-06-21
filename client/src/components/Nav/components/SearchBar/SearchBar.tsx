@@ -4,7 +4,7 @@ import { GoSearch } from 'react-icons/go';
 import styles from './SearchBar.module.css';
 
 const SearchBar: React.FC = () => {
-	const [ borderColor, setBorderColor ] = useState('#FF9900');
+	const [ borderColor, setBorderColor ] = useState('#131921');
 
 	return (
 		<div
