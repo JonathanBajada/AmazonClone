@@ -11,18 +11,24 @@
 .leftNav {
 	display: flex;
 	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
 	background-color: #131921;
 	height: 60px;
+	width: 200px;
+	padding-left: 4px;
 }
 
 .rightNav {
 	display: flex;
 	align-self: flex-end;
+	justify-content: center;
 	margin-left: auto;
 	flex-shrink: 0;
 	background-color: #131921;
 	height: 60px;
-	padding-right: 1px;
+	width: 400px;
+	margin-right: -4px;
 }
 
 .buttonStyle {

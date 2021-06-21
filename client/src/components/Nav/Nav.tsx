@@ -18,14 +18,16 @@ const Nav: React.FC<NavProps> = () => {
 				{/* Left Nav  */}
 				<div className={styles.leftNav}>
 					<Link to={'/'}>
-						<img
-							onClick={() => {
-								console.log('hi');
-							}}
-							src={amazonLogo}
-							className={styles.homePageIMG}
-							style={{ margin: 'auto' }}
-						/>
+						<div>
+							<img
+								onClick={() => {
+									console.log('hi');
+								}}
+								src={amazonLogo}
+								className={styles.homePageIMG}
+								style={{ margin: 'auto', marginTop: '2px', marginRight: '4px' }}
+							/>
+						</div>
 					</Link>
 
 					<div
@@ -69,7 +71,7 @@ const Nav: React.FC<NavProps> = () => {
 				<SearchBar />
 
 				{/* Right Nav  */}
-				<div className={styles.rightNav} style={{}}>
+				<div className={styles.rightNav}>
 					<div
 						className={styles.buttonStyle}
 						style={{
@@ -77,8 +79,7 @@ const Nav: React.FC<NavProps> = () => {
 							flexDirection: 'row',
 							alignSelf: 'center',
 							paddingLeft: '10px',
-							paddingRight: '10px',
-							marginLeft: '12px'
+							paddingRight: '10px'
 						}}
 					>
 						<div style={{ marginTop: 'auto', marginBottom: '8px', marginLeft: '4px' }}>
