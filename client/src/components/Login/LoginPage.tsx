@@ -11,10 +11,12 @@ const LoginPage = () => {
 	return (
 		<Fragment>
 			<div className={styles.container}>
+				{/* Home Button */}
 				<Link style={{ alignSelf: 'center' }} to={'/'}>
 					<img src={logo} style={{ width: '200px', height: '75px' }} />
 				</Link>
 
+				{/* Form Input */}
 				<div className={styles.formBox} style={{ height: showHelp === false ? '281px' : '327px' }}>
 					<h1>Sign-In</h1>
 
@@ -36,6 +38,7 @@ const LoginPage = () => {
 							<span>Privacy Notice.</span>
 						</div>
 					</div>
+
 					<div style={{ display: 'flex', flexDirection: 'column' }}>
 						<div
 							className={styles.helpWrapper}
