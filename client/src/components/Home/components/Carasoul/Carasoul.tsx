@@ -11,20 +11,20 @@ interface Props {}
 
 const Carasoul: React.FC<Props> = () => {
 	const imgArray = [ beautyHeader, electronicsHeader, shopHeader, toysHeader ];
-	const [ count, setCount ] = useState(0);
-	const [ headerIMG, setHeaderIMG ] = useState(imgArray[count]);
+	const [ clickCount, setClickCount ] = useState(0);
+	const [ headerIMG, setHeaderIMG ] = useState(imgArray[clickCount]);
 	return (
 		<Fragment>
 			<div className={styles.carasoulContainer} style={{ backgroundImage: `url(${headerIMG})` }}>
 				<div style={{ display: 'flex', justifyContent: 'center' }}>
 					<div
 						onClick={() => {
-							if (count === imgArray.length - 1) {
-								setCount(0);
+							if (clickCount === imgArray.length - 1) {
+								setClickCount(0);
 							} else {
-								setCount(count + 1);
+								setClickCount(clickCount + 1);
 							}
-							setHeaderIMG(imgArray[count]);
+							setHeaderIMG(imgArray[clickCount]);
 						}}
 						className={styles.leftArrow}
 					>
@@ -35,12 +35,12 @@ const Carasoul: React.FC<Props> = () => {
 
 					<div
 						onClick={() => {
-							if (count === 0) {
-								setCount(3);
+							if (clickCount === 0) {
+								setClickCount(3);
 							} else {
-								setCount(count - 1);
+								setClickCount(clickCount - 1);
 							}
-							setHeaderIMG(imgArray[count]);
+							setHeaderIMG(imgArray[clickCount]);
 						}}
 						className={styles.rightArrow}
 					>

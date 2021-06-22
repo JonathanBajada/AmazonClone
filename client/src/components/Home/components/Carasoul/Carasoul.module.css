@@ -7,6 +7,10 @@
 	flex-shrink: 0;
 }
 
+.carasoulContainer:hover {
+	cursor: pointer;
+}
+
 .leftArrow {
 	display: flex;
 	justify-content: center;
