@@ -3,6 +3,9 @@
 }
 .container {
 	font-family: "Amazon Ember", Arial, sans-serif;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 }
 
 .formBox {

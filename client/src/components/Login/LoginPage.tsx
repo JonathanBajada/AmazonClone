@@ -7,10 +7,7 @@ import styles from './LoginPage.module.css';
 const LoginPage = () => {
 	return (
 		<Fragment>
-			<div
-				className={styles.container}
-				style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column' }}
-			>
+			<div className={styles.container}>
 				<Link style={{ alignSelf: 'center' }} to={'/'}>
 					<img src={logo} style={{ width: '200px', height: '75px' }} />
 				</Link>
@@ -20,8 +17,6 @@ const LoginPage = () => {
 						justifyContent: 'center',
 						alignSelf: 'center',
 						borderRadius: '4px'
-
-						//backgroundColor: '#fff',
 					}}
 				>
 					<div className={styles.formBox}>
