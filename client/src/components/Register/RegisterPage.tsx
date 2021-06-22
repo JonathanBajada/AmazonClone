@@ -103,6 +103,12 @@ const RegisterPage = () => {
 					<div className={styles.bottomBorder}>
 						<div className={styles.borderInner} />
 					</div>
+					<div id="legalTextRow" className={styles.legalText}>
+						Aready have an account?{' '}
+						<Link to={'/signin'}>
+							<span className={styles.span1}>Sign in</span>
+						</Link>
+					</div>
 				</div>
 
 				{/* Bottom Section */}
