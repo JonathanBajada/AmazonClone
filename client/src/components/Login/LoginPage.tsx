@@ -70,18 +70,9 @@ const LoginPage = () => {
 				</div>
 				{/* Sign Up Section */}
 				<div className={styles.registerBox}>
-					<div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
+					<div className={styles.container} style={{ flexDirection: 'row' }}>
 						<div className={styles.registerLine} />
-						<span
-							style={{
-								textAlign: 'center',
-								color: '#767676',
-								fontSize: '12px',
-								width: '100%'
-							}}
-						>
-							New to Amazon?
-						</span>
+						<span className={styles.span4}>New to Amazon?</span>
 						<div className={styles.registerLine} />
 					</div>
 					<input
@@ -99,7 +90,7 @@ const LoginPage = () => {
 				<div className={styles.bottomBorder}>
 					<div className={styles.borderInner} />
 				</div>
-				<div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
+				<div className={styles.container} style={{ flexDirection: 'row' }}>
 					<a href="https://www.amazon.com/gp/help/customer/display.html/ref=ap_desktop_footer_cou?ie=UTF8&nodeId=508088">
 						<span className={styles.span2}>Conditions of use</span>
 					</a>
@@ -110,6 +101,8 @@ const LoginPage = () => {
 						<span className={styles.span2}>Help</span>
 					</a>
 				</div>
+
+				{/* Footer Section */}
 				<div className={styles.span3}>
 					<span>© 1996-2021, Amazon.com, Inc. or its affiliates</span>
 				</div>
