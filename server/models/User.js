@@ -15,14 +15,14 @@ const UserSchema = new mongoose.Schema({
     lowercase: true,
     unique: true,
     required: [true, 'Email cannot be blank'],
-    match: [/^[a-zA-Z0-9]+$/, 'is invalid'],
     index: true
   },
-  hash: String,
-  salt: String
+  password: String
 }, {timestamps: true});
 
 
 UserSchema.plugin(uniqueValidator, {message: 'is already taken.'});
 
-mongoose.model('user', UserSchema);
+const User = mongoose.model('User', UserSchema);
+
+module.exports = User;
