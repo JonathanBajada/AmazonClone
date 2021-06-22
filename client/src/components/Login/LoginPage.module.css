@@ -15,6 +15,7 @@
 	border: 1px #ddd solid;
 	padding: 20px 26px 20px 26px;
 	border-radius: 3px;
+	align-self: center;
 }
 
 h1 {
