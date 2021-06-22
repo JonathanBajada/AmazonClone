@@ -129,6 +129,8 @@ legend {
 
 .formBox {
 	width: 350px;
+	height: 526px;
+	margin-bottom: 28px;
 	background-color: white;
 	border: 1px #ddd solid;
 	padding: 20px 26px 20px 26px;
@@ -152,6 +154,7 @@ legend {
 	font-size: 12px;
 	line-height: 1.5 !important;
 	margin-top: 18px;
+	margin-bottom: 25px;
 }
 
 .registerBox {

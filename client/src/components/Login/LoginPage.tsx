@@ -1,6 +1,6 @@
 import React, { useEffect, useState, Fragment } from 'react';
 import { Link } from 'react-router-dom';
-import logo from './img/amazonLogoWhite.jpeg';
+import logo from '../../assets/img/amazonLogoWhite.jpeg';
 import styles from './LoginPage.module.css';
 import { AiOutlineCaretDown } from 'react-icons/ai';
 import { AiFillCaretRight } from 'react-icons/ai';
@@ -13,7 +13,7 @@ const LoginPage = () => {
 			<div className={styles.container}>
 				{/* Home Button */}
 				<Link style={{ alignSelf: 'center' }} to={'/'}>
-					<img src={logo} style={{ width: '200px', height: '75px' }} />
+					<img src={logo} />
 				</Link>
 
 				{/* Form Input */}
@@ -71,22 +71,24 @@ const LoginPage = () => {
 				{/* Sign Up Section */}
 				<div className={styles.registerBox}>
 					<div className={styles.container} style={{ flexDirection: 'row' }}>
-						<div className={styles.registerLine} />
+						<div className={styles.borderLine} />
 						<span className={styles.span4}>New to Amazon?</span>
-						<div className={styles.registerLine} />
+						<div className={styles.borderLine} />
 					</div>
-					<input
-						style={{ marginTop: '10px' }}
-						className={styles.buttonRegister}
-						id="continue"
-						value="Create your Amazon account"
-						type="submit"
-						name="submit"
-						tabIndex={5}
-					/>
+					<Link to={'/register'}>
+						<input
+							style={{ marginTop: '10px' }}
+							className={styles.buttonRegister}
+							id="createAccountSubmit"
+							value="Create your Amazon account"
+							type="submit"
+							name="submit"
+							tabIndex={6}
+						/>
+					</Link>
 				</div>
 
-				{/* Buttom Section */}
+				{/* Bottom Section */}
 				<div className={styles.bottomBorder}>
 					<div className={styles.borderInner} />
 				</div>
