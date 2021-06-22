@@ -7,6 +7,7 @@ import { AiFillCaretRight } from 'react-icons/ai';
 
 const LoginPage = () => {
 	const [ showHelp, setShowHelp ] = useState(false);
+	const [ email, setEmail ] = useState('');
 
 	return (
 		<Fragment>
@@ -22,7 +23,17 @@ const LoginPage = () => {
 
 					<div id="email" style={{ marginBottom: '14px' }}>
 						<label htmlFor="ap_email">Enter email address</label>
-						<input maxLength={128} id="ap_email" type="email" name="email" tabIndex={1} autoFocus />
+						<input
+							onChange={(e: string) => {
+								setEmail(e.target.value);
+							}}
+							maxLength={128}
+							id="ap_email"
+							type="email"
+							name="email"
+							tabIndex={1}
+							autoFocus
+						/>
 					</div>
 					<div>
 						<input
