@@ -26,7 +26,7 @@ const LoginPage = () => {
 					</div>
 					<div>
 						<input
-							className={styles.buttonStyle}
+							className={styles.buttonContinue}
 							id="continue"
 							value="Continue"
 							type="submit"
@@ -84,7 +84,7 @@ const LoginPage = () => {
 					</div>
 					<input
 						style={{ marginTop: '10px' }}
-						className={styles.buttonStyle}
+						className={styles.buttonRegister}
 						id="continue"
 						value="Create your Amazon account"
 						type="submit"
