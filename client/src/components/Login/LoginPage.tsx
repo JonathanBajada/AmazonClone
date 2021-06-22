@@ -92,6 +92,11 @@ const LoginPage = () => {
 						tabIndex={5}
 					/>
 				</div>
+
+				{/* Buttom Section */}
+				<div className={styles.bottomBorder}>
+					<div className={styles.borderInner} />
+				</div>
 			</div>
 		</Fragment>
 	);
