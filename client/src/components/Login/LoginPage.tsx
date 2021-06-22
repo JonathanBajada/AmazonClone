@@ -35,8 +35,17 @@ const LoginPage = () => {
 							<span>Privacy Notice.</span>
 						</div>
 					</div>
-					<div className={styles.helpWrapper}>
-						<AiFillCaretRight size={9} style={{ color: '#656565', alignSelf: 'center' }} />
+					<div
+						className={styles.helpWrapper}
+						onClick={() => {
+							showHelp === true ? setShowHelp(false) : setShowHelp(true);
+						}}
+					>
+						{showHelp === false ? (
+							<AiFillCaretRight size={9} style={{ color: '#656565', alignSelf: 'center' }} />
+						) : (
+							<AiOutlineCaretDown size={9} style={{ color: '#656565', alignSelf: 'center' }} />
+						)}
 						<span style={{ marginLeft: '4px' }}>Need Help?</span>
 					</div>
 				</div>
