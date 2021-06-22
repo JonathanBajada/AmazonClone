@@ -157,6 +157,11 @@ legend {
 	margin-bottom: 25px;
 }
 
+.alreadyRegistered {
+	font-size: 12px;
+	line-height: 1.5 !important;
+}
+
 .registerBox {
 	width: 405px;
 	background-color: white;

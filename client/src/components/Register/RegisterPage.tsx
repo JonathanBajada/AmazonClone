@@ -103,10 +103,10 @@ const RegisterPage = () => {
 					<div className={styles.bottomBorder}>
 						<div className={styles.borderInner} />
 					</div>
-					<div id="legalTextRow" className={styles.legalText}>
+					<div id="alreadyRegisterd" className={styles.registeredText}>
 						Aready have an account?{' '}
 						<Link to={'/signin'}>
-							<span className={styles.span1}>Sign in</span>
+							<span className={styles.span1}>Sign-in</span>
 						</Link>
 					</div>
 				</div>
