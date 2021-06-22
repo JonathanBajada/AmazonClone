@@ -6,7 +6,10 @@ import { AiOutlineCaretDown } from 'react-icons/ai';
 import { AiFillCaretRight } from 'react-icons/ai';
 
 const RegisterPage = () => {
-	const [ showHelp, setShowHelp ] = useState(false);
+	const [ name, setName ] = useState('');
+	const [ email, setEmail ] = useState('');
+	const [ password, setPassword ] = useState('');
+	const [ confirmPassword, setConfirmPassword ] = useState('');
 
 	return (
 		<Fragment>
@@ -27,7 +30,7 @@ const RegisterPage = () => {
 
 					<div id="email" style={{ marginBottom: '14px' }}>
 						<label htmlFor="ap_email">Email address</label>
-						<input maxLength={128} id="ap_email" type="email" name="email" tabIndex={2} autoFocus />
+						<input maxLength={128} id="ap_email" type="email" name="email" tabIndex={2} />
 					</div>
 
 					<div id="email" style={{ marginBottom: '14px' }}>
@@ -39,14 +42,14 @@ const RegisterPage = () => {
 							type="email"
 							name="email"
 							tabIndex={3}
-							autoFocus
 						/>
 					</div>
 
 					<div id="email" style={{ marginBottom: '14px' }}>
 						<label htmlFor="ap_email">Re-enter password</label>
-						<input maxLength={128} id="ap_email" type="email" name="email" tabIndex={4} autoFocus />
+						<input maxLength={128} id="ap_email" type="email" name="email" tabIndex={4} />
 					</div>
+
 					<div>
 						<input
 							className={styles.buttonContinue}
