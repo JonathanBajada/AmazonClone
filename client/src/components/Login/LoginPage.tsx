@@ -1,10 +1,12 @@
 import React, { useEffect, useState, Fragment } from 'react';
 import { Link } from 'react-router-dom';
-import './LoginPage.module.css';
 import logo from './img/amazonLogoWhite.jpeg';
 import styles from './LoginPage.module.css';
+import { AiOutlineCaretDown } from 'react-icons/ai';
+import { AiFillCaretRight } from 'react-icons/ai';
 
 const LoginPage = () => {
+	const [ showHelp, setShowHelp ] = useState(false);
 	return (
 		<Fragment>
 			<div className={styles.container}>
@@ -19,14 +21,24 @@ const LoginPage = () => {
 						<label htmlFor="ap_email">Enter email address</label>
 						<input maxLength={128} id="ap_email" type="email" name="email" tabIndex={1} autoFocus />
 					</div>
-					<input
-						className={styles.buttonStyle}
-						id="continue"
-						value="Continue"
-						type="submit"
-						name="submit"
-						tabIndex={5}
-					/>
+					<div>
+						<input
+							className={styles.buttonStyle}
+							id="continue"
+							value="Continue"
+							type="submit"
+							name="submit"
+							tabIndex={5}
+						/>
+						<div id="legalTextRow" className={styles.legalText}>
+							By continuing, you agree to Amazon's <span>Conditions of Use</span> and{' '}
+							<span>Privacy Notice.</span>
+						</div>
+					</div>
+					<div className={styles.helpWrapper}>
+						<AiFillCaretRight size={9} style={{ color: '#656565', alignSelf: 'center' }} />
+						<span style={{ marginLeft: '4px' }}>Need Help?</span>
+					</div>
 				</div>
 			</div>
 		</Fragment>

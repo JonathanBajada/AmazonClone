@@ -2,6 +2,13 @@
 	-webkit-box-sizing: border-box;
 }
 
+body {
+	font-size: 13px;
+	line-height: 19px;
+	color: #111;
+	font-family: Arial, sans-serif;
+}
+
 h1 {
 	margin: 0;
 	padding: 0;
@@ -30,6 +37,15 @@ input {
 input:focus {
 	border-color: #e77600;
 	box-shadow: 0 0 10px #e77600;
+}
+
+span {
+	color: #0066c0;
+}
+span:hover {
+	cursor: pointer;
+	color: #e77600;
+	text-decoration: underline;
 }
 
 .container {
@@ -75,4 +91,16 @@ legend {
 
 .buttonStyle:hover {
 	cursor: pointer;
+}
+
+.helpWrapper {
+	margin-top: 18px;
+	display: flex;
+	flex-direction: row;
+}
+
+.legalText {
+	font-size: 12px;
+	line-height: 1.5 !important;
+	margin-top: 18px;
 }
