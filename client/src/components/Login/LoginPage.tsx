@@ -17,32 +17,12 @@ const LoginPage = () => {
 
 					<div id="email" style={{ marginBottom: '14px' }}>
 						<label htmlFor="ap_email">Enter email address</label>
-						<input
-							maxLength={128}
-							className={styles.inputText}
-							id="ap_email"
-							type="email"
-							name="email"
-							tabIndex={1}
-							autoFocus
-						/>
+						<input maxLength={128} id="ap_email" type="email" name="email" tabIndex={1} autoFocus />
 					</div>
 					<input
-						className={styles.inputText}
-						style={{
-							display: 'block',
-							height: '23px',
-							borderRadius: '2px',
-							padding: '3px 7px 3px 7px',
-							lineHeight: 'normal',
-							width: '99.948%',
-							border: '1px solid #a6a6a6',
-							boxShadow: '0 1px 0 rgb(255 255 255 / 50%), 0 1px 0 rgb(0 0 0 / 7%) inset',
-							outline: '0',
-							//borderTopColor: '#949494;',
-							borderColor: '#e77600'
-						}}
+						className={styles.buttonStyle}
 						id="continue"
+						value="Continue"
 						type="submit"
 						name="submit"
 						tabIndex={5}
