@@ -51,7 +51,7 @@ const LoginPage = () => {
 							<span style={{ marginLeft: '4px' }}>Need Help?</span>
 						</div>
 						{showHelp === true ? (
-							<div style={{ marginLeft: '13px' }}>
+							<div style={{ marginLeft: '10px' }}>
 								<li>
 									<span>Forget your password?</span>
 								</li>
