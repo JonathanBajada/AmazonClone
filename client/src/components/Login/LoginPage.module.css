@@ -44,6 +44,7 @@ li {
 }
 
 span {
+	text-decoration: none;
 	color: #0066c0;
 }
 span:hover {
@@ -60,7 +61,6 @@ span:hover {
 }
 
 .formBox {
-	height: 281px;
 	width: 350px;
 	background-color: white;
 	border: 1px #ddd solid;
@@ -101,6 +101,12 @@ legend {
 	margin-top: 18px;
 	display: flex;
 	flex-direction: row;
+}
+
+.arrow {
+	color: #656565;
+	align-self: center;
+	margin-left: -3px;
 }
 
 .legalText {

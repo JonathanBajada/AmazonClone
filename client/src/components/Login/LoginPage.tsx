@@ -7,6 +7,7 @@ import { AiFillCaretRight } from 'react-icons/ai';
 
 const LoginPage = () => {
 	const [ showHelp, setShowHelp ] = useState(false);
+
 	return (
 		<Fragment>
 			<div className={styles.container}>
@@ -15,7 +16,7 @@ const LoginPage = () => {
 				</Link>
 
 				<div className={styles.formBox} style={{ height: showHelp === false ? '281px' : '327px' }}>
-					<h1>Sign In</h1>
+					<h1>Sign-In</h1>
 
 					<div id="email" style={{ marginBottom: '14px' }}>
 						<label htmlFor="ap_email">Enter email address</label>
@@ -43,9 +44,9 @@ const LoginPage = () => {
 							}}
 						>
 							{showHelp === false ? (
-								<AiFillCaretRight size={9} style={{ color: '#656565', alignSelf: 'center' }} />
+								<AiFillCaretRight size={10} className={styles.arrow} />
 							) : (
-								<AiOutlineCaretDown size={9} style={{ color: '#656565', alignSelf: 'center' }} />
+								<AiOutlineCaretDown size={9} className={styles.arrow} />
 							)}
 							<span style={{ marginLeft: '4px' }}>Need Help?</span>
 						</div>
