@@ -97,6 +97,14 @@ const LoginPage = () => {
 				<div className={styles.bottomBorder}>
 					<div className={styles.borderInner} />
 				</div>
+				<div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
+					<span>Conditions of use</span>
+					<span>Privacy Notice</span>
+					<span>Help</span>
+				</div>
+				<div style={{ alignSelf: 'center' }}>
+					<span>© 1996-2021, Amazon.com, Inc. or its affiliates</span>
+				</div>
 			</div>
 		</Fragment>
 	);
