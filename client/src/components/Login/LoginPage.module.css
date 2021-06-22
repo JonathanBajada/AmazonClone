@@ -2,6 +2,11 @@
 	-webkit-box-sizing: border-box;
 }
 
+a,
+u {
+	text-decoration: none;
+}
+
 body {
 	font-size: 13px;
 	line-height: 19px;
@@ -47,16 +52,6 @@ input:focus {
 li {
 	list-style: none;
 	padding-top: 4px;
-}
-
-span {
-	text-decoration: none;
-	color: #0066c0;
-}
-span:hover {
-	cursor: pointer;
-	color: #e77600;
-	text-decoration: underline;
 }
 
 label,
@@ -166,4 +161,39 @@ legend {
 	color: black;
 	height: 1.5px;
 	width: 100%;
+}
+
+.span1 {
+	text-decoration: none;
+	color: #0066c0;
+}
+
+.span1:hover {
+	cursor: pointer;
+	color: #e77600;
+	text-decoration: underline;
+}
+
+.span2 {
+	text-decoration: none;
+	color: #0066c0;
+	font-size: 11px;
+	line-height: 1.465;
+	margin-right: 20px;
+}
+
+.span2:hover {
+	cursor: pointer;
+	color: #e77600;
+	text-decoration: underline;
+}
+
+.span3 {
+	margin-top: 10px;
+	text-decoration: none;
+	color: #555 !important;
+	font-size: 11px;
+	line-height: 1.465;
+	margin-right: 20px;
+	align-self: center;
 }

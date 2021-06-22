@@ -34,8 +34,8 @@ const LoginPage = () => {
 							tabIndex={5}
 						/>
 						<div id="legalTextRow" className={styles.legalText}>
-							By continuing, you agree to Amazon's <span>Conditions of Use</span> and{' '}
-							<span>Privacy Notice.</span>
+							By continuing, you agree to Amazon's <span className={styles.span1}>Conditions of Use</span>{' '}
+							and <span className={styles.span1}>Privacy Notice.</span>
 						</div>
 					</div>
 
@@ -52,15 +52,17 @@ const LoginPage = () => {
 							) : (
 								<AiOutlineCaretDown size={9} className={styles.arrow} />
 							)}
-							<span style={{ marginLeft: '4px' }}>Need Help?</span>
+							<span className={styles.span1} style={{ marginLeft: '4px' }}>
+								Need Help?
+							</span>
 						</div>
 						{showHelp === true ? (
 							<div style={{ marginLeft: '10px' }}>
 								<li>
-									<span>Forget your password?</span>
+									<span className={styles.span1}>Forget your password?</span>
 								</li>
 								<li>
-									<span>Other issues with Sign-In</span>
+									<span className={styles.span1}>Other issues with Sign-In</span>
 								</li>
 							</div>
 						) : null}
@@ -98,11 +100,17 @@ const LoginPage = () => {
 					<div className={styles.borderInner} />
 				</div>
 				<div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
-					<span>Conditions of use</span>
-					<span>Privacy Notice</span>
-					<span>Help</span>
+					<a href="https://www.amazon.com/gp/help/customer/display.html/ref=ap_desktop_footer_cou?ie=UTF8&nodeId=508088">
+						<span className={styles.span2}>Conditions of use</span>
+					</a>
+					<a href="https://www.amazon.com/gp/help/customer/display.html/ref=ap_desktop_footer_privacy_notice?ie=UTF8&nodeId=468496">
+						<span className={styles.span2}>Privacy Notice</span>
+					</a>
+					<a href="https://www.amazon.com/gp/help/customer/display.html">
+						<span className={styles.span2}>Help</span>
+					</a>
 				</div>
-				<div style={{ alignSelf: 'center' }}>
+				<div className={styles.span3}>
 					<span>© 1996-2021, Amazon.com, Inc. or its affiliates</span>
 				</div>
 			</div>
