@@ -24,6 +24,7 @@ const LoginPage = () => {
 							type="email"
 							name="email"
 							tabIndex={1}
+							autoFocus
 						/>
 					</div>
 					<input
@@ -41,8 +42,10 @@ const LoginPage = () => {
 							//borderTopColor: '#949494;',
 							borderColor: '#e77600'
 						}}
+						id="continue"
 						type="submit"
 						name="submit"
+						tabIndex={5}
 					/>
 				</div>
 			</div>
