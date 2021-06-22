@@ -25,17 +25,39 @@ const RegisterPage = () => {
 
 					<div id="email" style={{ marginBottom: '14px' }}>
 						<label htmlFor="ap_email">Your name</label>
-						<input maxLength={128} id="ap_email" type="email" name="email" tabIndex={1} autoFocus />
+						<input
+							onChange={(e: string) => {
+								setName(e.target.value);
+							}}
+							maxLength={128}
+							id="ap_email"
+							type="email"
+							name="email"
+							tabIndex={1}
+							autoFocus
+						/>
 					</div>
 
 					<div id="email" style={{ marginBottom: '14px' }}>
 						<label htmlFor="ap_email">Email address</label>
-						<input maxLength={128} id="ap_email" type="email" name="email" tabIndex={2} />
+						<input
+							onChange={(e: string) => {
+								setEmail(e.target.value);
+							}}
+							maxLength={128}
+							id="ap_email"
+							type="email"
+							name="email"
+							tabIndex={2}
+						/>
 					</div>
 
 					<div id="email" style={{ marginBottom: '14px' }}>
 						<label htmlFor="ap_email">Password</label>
 						<input
+							onChange={(e: string) => {
+								setPassword(e.target.value);
+							}}
 							placeHolder={'At least 6 characters'}
 							axLength={128}
 							id="ap_email"
@@ -47,7 +69,16 @@ const RegisterPage = () => {
 
 					<div id="email" style={{ marginBottom: '14px' }}>
 						<label htmlFor="ap_email">Re-enter password</label>
-						<input maxLength={128} id="ap_email" type="email" name="email" tabIndex={4} />
+						<input
+							onChange={(e: string) => {
+								setConfirmPassword(e.target.value);
+							}}
+							maxLength={128}
+							id="ap_email"
+							type="email"
+							name="email"
+							tabIndex={4}
+						/>
 					</div>
 
 					<div>
