@@ -1,5 +1,17 @@
+* {
+	-webkit-box-sizing: border-box;
+}
 .container {
 	font-family: "Amazon Ember", Arial, sans-serif;
+}
+
+.formBox {
+	height: 281px;
+	width: 350px;
+	background-color: white;
+	border: 1px #ddd solid;
+	padding: 20px 26px 20px 26px;
+	border-radius: 3px;
 }
 
 h1 {
@@ -10,6 +22,7 @@ h1 {
 	font-weight: 400;
 	font-size: 28px;
 	line-height: 1.2;
+	text-rendering: optimizeLegibility;
 }
 
 label,
@@ -22,8 +35,24 @@ legend {
 }
 
 .inputText {
-	background-color: #fff;
 	height: 31px;
 	padding: 3px 7px;
 	line-height: normal;
+}
+input {
+	border-top-color: #949494;
+	border: 1px solid #a6a6a6;
+	border-top-style: solid;
+	border-radius: 3px;
+	width: 100%;
+	height: 23px;
+	padding: 3px 7px 3px 7px;
+	outline: 0;
+	align-self: center;
+	display: block;
+}
+
+input:focus {
+	border-color: #e77600;
+	box-shadow: 0 0 10px #e77600;
 }
