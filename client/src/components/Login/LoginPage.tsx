@@ -14,7 +14,7 @@ const LoginPage = () => {
 					<img src={logo} style={{ width: '200px', height: '75px' }} />
 				</Link>
 
-				<div className={styles.formBox}>
+				<div className={styles.formBox} style={{ height: showHelp === false ? '281px' : '327px' }}>
 					<h1>Sign In</h1>
 
 					<div id="email" style={{ marginBottom: '14px' }}>
