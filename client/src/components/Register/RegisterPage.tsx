@@ -27,17 +27,25 @@ const RegisterPage = () => {
 
 					<div id="email" style={{ marginBottom: '14px' }}>
 						<label htmlFor="ap_email">Email address</label>
-						<input maxLength={128} id="ap_email" type="email" name="email" tabIndex={1} autoFocus />
+						<input maxLength={128} id="ap_email" type="email" name="email" tabIndex={2} autoFocus />
 					</div>
 
 					<div id="email" style={{ marginBottom: '14px' }}>
 						<label htmlFor="ap_email">Password</label>
-						<input maxLength={128} id="ap_email" type="email" name="email" tabIndex={1} autoFocus />
+						<input
+							placeHolder={'At least 6 characters'}
+							axLength={128}
+							id="ap_email"
+							type="email"
+							name="email"
+							tabIndex={3}
+							autoFocus
+						/>
 					</div>
 
 					<div id="email" style={{ marginBottom: '14px' }}>
 						<label htmlFor="ap_email">Re-enter password</label>
-						<input maxLength={128} id="ap_email" type="email" name="email" tabIndex={1} autoFocus />
+						<input maxLength={128} id="ap_email" type="email" name="email" tabIndex={4} autoFocus />
 					</div>
 					<div>
 						<input
