@@ -45,8 +45,13 @@ const LoginPage = () => {
 							tabIndex={5}
 						/>
 						<div id="legalTextRow" className={styles.legalText}>
-							By continuing, you agree to Amazon's <span className={styles.span1}>Conditions of Use</span>{' '}
-							and <span className={styles.span1}>Privacy Notice.</span>
+							By continuing, you agree to Amazon's{' '}
+							<a href="https://www.amazon.com/gp/help/customer/display.html/ref=ap_register_notification_condition_of_use?ie=UTF8&nodeId=508088">
+								<span className={styles.span1}>Conditions of Use</span> and{' '}
+							</a>
+							<a href="https://www.amazon.com/gp/help/customer/display.html/ref=ap_register_notification_privacy_notice?ie=UTF8&nodeId=468496">
+								<span className={styles.span1}>Privacy Notice.</span>
+							</a>
 						</div>
 					</div>
 
