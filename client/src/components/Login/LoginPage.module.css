@@ -41,6 +41,7 @@ input:focus {
 
 li {
 	list-style: none;
+	padding-top: 4px;
 }
 
 span {
