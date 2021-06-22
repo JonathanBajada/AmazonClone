@@ -39,6 +39,10 @@ input:focus {
 	box-shadow: 0 0 10px #e77600;
 }
 
+li {
+	list-style: none;
+}
+
 span {
 	color: #0066c0;
 }
