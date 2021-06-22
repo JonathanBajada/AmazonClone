@@ -39,6 +39,7 @@ const LoginPage = () => {
 						</div>
 					</div>
 
+					{/* help button and list */}
 					<div style={{ display: 'flex', flexDirection: 'column' }}>
 						<div
 							className={styles.helpWrapper}
@@ -64,6 +65,32 @@ const LoginPage = () => {
 							</div>
 						) : null}
 					</div>
+				</div>
+				{/* Sign Up Section */}
+				<div className={styles.registerBox}>
+					<div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
+						<div className={styles.registerLine} />
+						<span
+							style={{
+								textAlign: 'center',
+								color: '#767676',
+								fontSize: '12px',
+								width: '100%'
+							}}
+						>
+							New to Amazon?
+						</span>
+						<div className={styles.registerLine} />
+					</div>
+					<input
+						style={{ marginTop: '10px' }}
+						className={styles.buttonStyle}
+						id="continue"
+						value="Create your Amazon account"
+						type="submit"
+						name="submit"
+						tabIndex={5}
+					/>
 				</div>
 			</div>
 		</Fragment>
