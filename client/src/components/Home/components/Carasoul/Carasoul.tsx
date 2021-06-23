@@ -28,8 +28,15 @@ const Carasoul: React.FC<Props> = () => {
 
 	return (
 		<Fragment>
+			{/* 
 			<div className={styles.carasoulContainer} style={{ backgroundImage: `url(${headerIMG})` }}>
-				<div style={{ display: 'flex', justifyContent: 'center' }}>
+			 */}
+			<div className={styles.carasoulContainer}>
+				{imgArray.map((image, index) => {
+					return <img src={shopHeader} className={styles.carasoulCard} />;
+				})}
+				<div className={styles.buttonSection}>
+					{/* Left Arrow Button*/}
 					<div
 						onClick={() => {
 							if (clickCount === imgArray.length - 1) {
@@ -41,11 +48,17 @@ const Carasoul: React.FC<Props> = () => {
 						}}
 						className={styles.leftArrow}
 					>
-						<div style={{ display: 'flex', alignSelf: 'center' }}>
+						<div
+							style={{
+								display: 'flex',
+								alignSelf: 'center'
+							}}
+						>
 							<BsChevronLeft size={40} style={{ marginRight: '9px' }} />
 						</div>
 					</div>
 
+					{/* Right Arrow Button*/}
 					<div
 						onClick={() => {
 							if (clickCount === 0) {
@@ -67,3 +80,9 @@ const Carasoul: React.FC<Props> = () => {
 	);
 };
 export default Carasoul;
+
+/*
+	{imgArray.map((image, index) => {
+					return <img src={shopHeader} className={styles.carasoulCard} />;
+				})}
+	 */

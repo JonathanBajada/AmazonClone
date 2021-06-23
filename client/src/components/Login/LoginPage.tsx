@@ -24,7 +24,7 @@ const LoginPage = () => {
 					<div id="email" style={{ marginBottom: '14px' }}>
 						<label htmlFor="ap_email">Enter email address</label>
 						<input
-							onChange={(e: string) => {
+							onChange={(e) => {
 								setEmail(e.target.value);
 							}}
 							maxLength={128}

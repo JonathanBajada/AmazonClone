@@ -26,7 +26,7 @@ const RegisterPage = () => {
 					<div id="email" style={{ marginBottom: '14px' }}>
 						<label htmlFor="ap_email">Your name</label>
 						<input
-							onChange={(e: string) => {
+							onChange={(e) => {
 								setName(e.target.value);
 							}}
 							maxLength={128}
@@ -41,7 +41,7 @@ const RegisterPage = () => {
 					<div id="email" style={{ marginBottom: '14px' }}>
 						<label htmlFor="ap_email">Email address</label>
 						<input
-							onChange={(e: string) => {
+							onChange={(e) => {
 								setEmail(e.target.value);
 							}}
 							maxLength={128}
@@ -55,11 +55,11 @@ const RegisterPage = () => {
 					<div id="email" style={{ marginBottom: '14px' }}>
 						<label htmlFor="ap_email">Password</label>
 						<input
-							onChange={(e: string) => {
+							onChange={(e) => {
 								setPassword(e.target.value);
 							}}
-							placeHolder={'At least 6 characters'}
-							axLength={128}
+							placeholder={'At least 6 characters'}
+							maxLength={128}
 							id="ap_email"
 							type="email"
 							name="email"
@@ -70,7 +70,7 @@ const RegisterPage = () => {
 					<div id="email" style={{ marginBottom: '14px' }}>
 						<label htmlFor="ap_email">Re-enter password</label>
 						<input
-							onChange={(e: string) => {
+							onChange={(e) => {
 								setConfirmPassword(e.target.value);
 							}}
 							maxLength={128}
