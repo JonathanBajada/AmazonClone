@@ -50,7 +50,7 @@ const Carasoul: React.FC<Props> = () => {
 					return (
 						<div
 							className={index === clickCount ? styles.slideActive : styles.slide}
-							style={{ position: 'relative', marginBottom: 'auto' }}
+							style={{ marginBottom: 'auto' }}
 							key={index}
 						>
 							{index === clickCount && <img src={image} className={styles.carasoulCard} />}
@@ -92,8 +92,3 @@ const Carasoul: React.FC<Props> = () => {
 	);
 };
 export default Carasoul;
-/*
-	<div className={index === clickCount ? styles.slideActve : styles.slide} key={index}>
-							{index === clickCount && <img src={image} className={styles.carasoulCard} />}
-						</div>
-*/
