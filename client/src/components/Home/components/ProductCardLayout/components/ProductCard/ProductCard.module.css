@@ -1,6 +1,8 @@
 a {
 	text-decoration: none;
 	color: #007185;
+	margin-left: 36px;
+	align-self: center;
 }
 
 h2 {
@@ -29,13 +31,13 @@ h2 {
 	padding: 0 20px;
 	margin-bottom: 20px;
 	position: absolute;
-	bottom: 0;
 	width: 100%;
 }
 
 .Header {
 	width: 100%;
 	padding-bottom: 15px;
+	margin-bottom: -10px;
 	background-color: white;
 }
 

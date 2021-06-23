@@ -48,6 +48,7 @@ const ProductCardLayout = () => {
 		<Fragment>
 			<div
 				style={{
+					marginLeft: '10px',
 					width: '100%',
 					height: '1000px',
 					backgroundColor: 'transparent',
