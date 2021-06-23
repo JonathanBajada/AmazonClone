@@ -10,7 +10,7 @@ import toysHeader from './img/ToysHeader.jpg';
 interface Props {}
 
 const Carasoul: React.FC<Props> = () => {
-	const imgArray = [ beautyHeader, electronicsHeader, shopHeader, toysHeader ];
+	const imgArray = [ shopHeader, beautyHeader, electronicsHeader, toysHeader ];
 	const [ clickCount, setClickCount ] = useState(0);
 	const [ headerIMG, setHeaderIMG ] = useState(imgArray[clickCount]);
 

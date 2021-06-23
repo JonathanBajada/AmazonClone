@@ -19,35 +19,17 @@ const Nav: React.FC<NavProps> = () => {
 				<div className={styles.leftNav}>
 					<Link to={'/'}>
 						<div>
-							<img
-								onClick={() => {
-									console.log('hi');
-								}}
-								src={amazonLogo}
-								className={styles.homePageIMG}
-								style={{ margin: 'auto', marginTop: '2px', marginRight: '4px' }}
-							/>
+							<img src={amazonLogo} className={styles.homePageIMG} />
 						</div>
 					</Link>
 
 					<div
 						className={styles.buttonStyle}
-						style={{
-							display: 'flex',
-							paddingLeft: '4px',
-							paddingRight: '8px'
-						}}
 						onClick={() => {
 							console.log('hi');
 						}}
 					>
-						<div
-							style={{
-								alignSelf: 'center',
-								marginTop: '11px',
-								marginRight: '2px'
-							}}
-						>
+						<div className={styles.locationIMG}>
 							<HiOutlineLocationMarker size={18} color={'white'} />
 						</div>
 						<div style={{ display: 'flex', flexDirection: 'column', alignSelf: 'center' }}>
@@ -72,16 +54,7 @@ const Nav: React.FC<NavProps> = () => {
 
 				{/* Right Nav  */}
 				<div className={styles.rightNav}>
-					<div
-						className={styles.buttonStyle}
-						style={{
-							display: 'flex',
-							flexDirection: 'row',
-							alignSelf: 'center',
-							paddingLeft: '10px',
-							paddingRight: '10px'
-						}}
-					>
+					<div className={styles.buttonStyle2}>
 						<div style={{ marginTop: 'auto', marginBottom: '8px', marginLeft: '4px' }}>
 							<img src={usaFlag} style={{ width: '22px', height: '15px' }} />
 						</div>
@@ -89,24 +62,14 @@ const Nav: React.FC<NavProps> = () => {
 							<AiFillCaretDown color={'#A7ACB1'} size={12} />
 						</div>
 					</div>
-					<div
-						className={styles.buttonStyle}
-						style={{
-							display: 'flex',
-							flexDirection: 'row',
-							alignSelf: 'center',
-							paddingLeft: '10px',
-							paddingRight: '10px'
-						}}
-					>
-						<Link to={'/signin'} style={{ alignSelf: 'center', textDecoration: 'none' }}>
+					<div className={styles.buttonStyle2}>
+						<Link to={'/signin'} style={{ alignSelf: 'center' }}>
 							<div style={{ display: 'flex', flexDirection: 'column' }}>
 								<span
 									style={{
 										marginTop: 'auto',
 										marginRight: 'auto',
 										color: 'white',
-
 										fontSize: '12px',
 										fontWeight: 600,
 										lineHeight: '15px'
@@ -161,16 +124,7 @@ const Nav: React.FC<NavProps> = () => {
 						</span>
 					</div>
 
-					<div
-						className={styles.buttonStyle}
-						style={{
-							display: 'flex',
-							flexDirection: 'row',
-							alignSelf: 'center',
-							paddingLeft: '10px',
-							paddingRight: '10px'
-						}}
-					>
+					<div className={styles.buttonStyle3}>
 						<div style={{ marginTop: 'auto', marginBottom: '6px', marginRight: '2px' }}>
 							<RiShoppingCartLine color={'white'} size={34} />
 						</div>
