@@ -12,7 +12,22 @@ interface Props {}
 const Carasoul: React.FC<Props> = () => {
 	const imgArray = [ shopHeader, beautyHeader, electronicsHeader, toysHeader ];
 	const [ clickCount, setClickCount ] = useState(0);
-	const [ headerIMG, setHeaderIMG ] = useState(imgArray[clickCount]);
+
+	const slideLeft = () => {
+		if (clickCount === imgArray.length - 1) {
+			setClickCount(0);
+		} else {
+			setClickCount(clickCount + 1);
+		}
+	};
+
+	const slideRight = () => {
+		if (clickCount === imgArray.length - 1) {
+			setClickCount(0);
+		} else {
+			setClickCount(clickCount + 1);
+		}
+	};
 
 	useEffect(() => {
 		const timer = setTimeout(() => {
@@ -21,7 +36,6 @@ const Carasoul: React.FC<Props> = () => {
 			} else {
 				setClickCount(clickCount + 1);
 			}
-			setHeaderIMG(imgArray[clickCount]);
 		}, 10000);
 		return () => clearTimeout(timer);
 	});
@@ -33,18 +47,21 @@ const Carasoul: React.FC<Props> = () => {
 			 */}
 			<div className={styles.carasoulContainer}>
 				{imgArray.map((image, index) => {
-					return <img src={shopHeader} className={styles.carasoulCard} />;
+					return (
+						<div
+							className={index === clickCount ? styles.slideActive : styles.slide}
+							style={{ position: 'absolute' }}
+							key={index}
+						>
+							{index === clickCount && <img src={image} className={styles.carasoulCard} />}
+						</div>
+					);
 				})}
 				<div className={styles.buttonSection}>
 					{/* Left Arrow Button*/}
 					<div
 						onClick={() => {
-							if (clickCount === imgArray.length - 1) {
-								setClickCount(0);
-							} else {
-								setClickCount(clickCount + 1);
-							}
-							setHeaderIMG(imgArray[clickCount]);
+							slideLeft();
 						}}
 						className={styles.leftArrow}
 					>
@@ -61,12 +78,7 @@ const Carasoul: React.FC<Props> = () => {
 					{/* Right Arrow Button*/}
 					<div
 						onClick={() => {
-							if (clickCount === 0) {
-								setClickCount(3);
-							} else {
-								setClickCount(clickCount - 1);
-							}
-							setHeaderIMG(imgArray[clickCount]);
+							slideRight();
 						}}
 						className={styles.rightArrow}
 					>
@@ -80,9 +92,8 @@ const Carasoul: React.FC<Props> = () => {
 	);
 };
 export default Carasoul;
-
 /*
-	{imgArray.map((image, index) => {
-					return <img src={shopHeader} className={styles.carasoulCard} />;
-				})}
-	 */
+	<div className={index === clickCount ? styles.slideActve : styles.slide} key={index}>
+							{index === clickCount && <img src={image} className={styles.carasoulCard} />}
+						</div>
+*/

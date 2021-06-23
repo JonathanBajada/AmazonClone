@@ -6,15 +6,12 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: aqua;
 }
 
 .carasoulCard {
-	position: absolute;
 	height: 600px;
 	width: 100%;
 	min-width: 1000px;
-	width: 1;
 }
 .carasoulContainer:hover {
 	cursor: pointer;
@@ -53,4 +50,35 @@
 
 .rightArrow:hover {
 	cursor: pointer;
+}
+
+.slide {
+	opacity: 0;
+	opacity: 0.01;
+	height: 0px;
+}
+
+.slideActive {
+	/*transition: opacity 300ms ease, height 400ms ease 300ms;*/
+	-webkit-animation: slideIn 0.7s ease;
+	-moz-animation: slideIn 0.7s ease;
+	animation: slideIn 0.7s ease;
+}
+
+@keyframes slideIn {
+	0% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0;
+	}
+	90% {
+		transform: translate(0, -100px);
+	}
+	100% {
+		opacity: 0;
+		/*transform: translateY(0px);*/
+		/*opacity:1*/
+	}
 }
