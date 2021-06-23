@@ -44,6 +44,7 @@ const SearchBar: React.FC = () => {
 					alignSelf: 'center',
 					borderStyle: 'solid',
 					borderColor: 'white',
+					borderRadius: '0',
 					width: '100%',
 					outline: 'none'
 				}}
