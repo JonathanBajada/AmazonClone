@@ -21,7 +21,7 @@
 .leftNav {
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-evenly;
 	flex-shrink: 0;
 	background-color: #131921;
 	height: 60px;
@@ -32,7 +32,7 @@
 .rightNav {
 	display: flex;
 	align-self: flex-end;
-	justify-content: center;
+	justify-content: space-evenly;
 	margin-left: auto;
 	flex-shrink: 0;
 	background-color: #131921;
@@ -87,6 +87,14 @@
 	border-color: white;
 	border-width: 1px;
 }
+.buttonStyle2:hover {
+	border-color: white;
+	border-width: 1px;
+}
+.buttonStyle3:hover {
+	border-color: white;
+	border-width: 1px;
+}
 
 .buttonTitle {
 	color: white;
@@ -100,9 +108,8 @@
 .homePageIMG {
 	height: 50px;
 	width: 100px;
-	margin: auto;
-	margin-top: 2px;
-	margin-right: 4px;
+	margin-top: 4px;
+	margin-left: -4px;
 	border: 1px solid #131921;
 	cursor: pointer;
 }
