@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react';
+import React, { Fragment, useState, useEffect } from 'react';
 import { BsChevronLeft } from 'react-icons/bs';
 import { BsChevronRight } from 'react-icons/bs';
 import styles from './Carasoul.module.css';
@@ -13,6 +13,19 @@ const Carasoul: React.FC<Props> = () => {
 	const imgArray = [ beautyHeader, electronicsHeader, shopHeader, toysHeader ];
 	const [ clickCount, setClickCount ] = useState(0);
 	const [ headerIMG, setHeaderIMG ] = useState(imgArray[clickCount]);
+
+	useEffect(() => {
+		const timer = setTimeout(() => {
+			if (clickCount === imgArray.length - 1) {
+				setClickCount(0);
+			} else {
+				setClickCount(clickCount + 1);
+			}
+			setHeaderIMG(imgArray[clickCount]);
+		}, 10000);
+		return () => clearTimeout(timer);
+	});
+
 	return (
 		<Fragment>
 			<div className={styles.carasoulContainer} style={{ backgroundImage: `url(${headerIMG})` }}>

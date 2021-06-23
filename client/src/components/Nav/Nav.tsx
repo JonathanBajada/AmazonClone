@@ -204,8 +204,8 @@ const Nav: React.FC<NavProps> = () => {
 				</div>
 			</div>
 
-			{/* Second header  */}
-			<div style={{ height: 39, backgroundColor: '#232f3e' }} />
+			{/* Top Nav  */}
+			<div className={styles.bottomNavigation}>{/* Second header  */}</div>
 		</div>
 	);
 };

@@ -1,6 +1,8 @@
 .carasoulContainer {
-	width: 100%;
+	position: absolute;
 	height: 600px;
+	width: 100%;
+	min-width: 1000px;
 	background-color: white;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;

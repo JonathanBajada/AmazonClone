@@ -2,7 +2,17 @@
 	height: 60px;
 	background-color: #131921;
 	width: 100%;
+	min-width: 1000px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
 
+.bottomNavigation {
+	height: 39px;
+	background-color: #232f3e;
+	width: 100%;
+	min-width: 1000px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -28,14 +38,13 @@
 	background-color: #131921;
 	height: 60px;
 	width: 400px;
-	margin-right: -4px;
 }
 
 .buttonStyle {
 	background-color: #131921;
 	height: 50px;
 	flex-shrink: 0;
-	margin-right: 4px;
+
 	border-color: #131921;
 	border-style: solid;
 	border-width: 1px;
