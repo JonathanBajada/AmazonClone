@@ -1,0 +1,45 @@
+a {
+	text-decoration: none;
+	color: #007185;
+}
+
+h2 {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 32px;
+	padding: 0;
+	margin: 0;
+}
+
+.cardContainer {
+	background-color: yellow;
+	width: 306.672px;
+	height: 420px;
+	padding-top: 20px;
+	border-width: 10px;
+}
+
+.cardImage {
+	align-self: center;
+	width: 266.67px;
+	height: 304px;
+}
+
+.cardFooter {
+	padding: 0 20px;
+	margin-bottom: 20px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.Header {
+	width: 100%;
+	background-color: red;
+}
+
+.imageContainer {
+	display: flex;
+	justify-content: center;
+	background-color: red;
+}
