@@ -60,25 +60,32 @@
 
 .slideActive {
 	/*transition: opacity 300ms ease, height 400ms ease 300ms;*/
-	-webkit-animation: slideIn 0.7s ease;
-	-moz-animation: slideIn 0.7s ease;
-	animation: slideIn 0.7s ease;
+	-webkit-animation: slideIn 0.2s forwards;
+	-moz-animation: slideIn 0.2s forwards;
+	animation: slideIn 0.2s forwards;
 }
 
-@keyframes slideIn {
+@-webkit-keyframes slideIn {
 	0% {
-		opacity: 1;
-	}
-
-	50% {
-		opacity: 0;
-	}
-	90% {
-		transform: translate(0, -100px);
+		transform: translateX(-900px);
 	}
 	100% {
-		opacity: 0;
-		/*transform: translateY(0px);*/
-		/*opacity:1*/
+		transform: translateX(0);
+	}
+}
+@-moz-keyframes slideIn {
+	0% {
+		transform: translateX(-900px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+@keyframes slideIn {
+	0% {
+		transform: translateX(-900px);
+	}
+	100% {
+		transform: translateX(0);
 	}
 }
