@@ -12,8 +12,8 @@ h2 {
 }
 
 .cardContainer {
-	background-color: yellow;
-	width: 306.672px;
+	background-color: white;
+	width: 373px;
 	height: 420px;
 	padding-top: 20px;
 	border-width: 10px;
@@ -35,11 +35,14 @@ h2 {
 
 .Header {
 	width: 100%;
-	background-color: red;
+	padding-bottom: 15px;
+	background-color: orange;
 }
 
 .imageContainer {
 	display: flex;
 	justify-content: center;
-	background-color: red;
+	background-color: white;
+	width: 373px;
+	height: 304px;
 }
