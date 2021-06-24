@@ -1,8 +1,7 @@
 .bodyContainer {
 	display: flex;
 	flex-direction: column;
-	height: 2000px;
-	min-width: 1000px;
+	height: 100vh;
 	overflow: hidden;
 	background-color: #eaeded;
 }
@@ -10,8 +9,6 @@
 .styleCarasoul {
 	position: absolute;
 	align-self: center;
-
-	min-width: 1500px;
 }
 
 .styleCardLayout {

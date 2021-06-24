@@ -6,8 +6,6 @@ import beautyHeader from './img/BeautyHeader.jpg';
 import electronicsHeader from './img/ElectronicsHeader.jpg';
 import shopHeader from './img/ShopHeader.jpg';
 import toysHeader from './img/ToysHeader.jpg';
-import basic from '../ProductCardLayout/components/ProductCard/img/basics.jpg';
-import ProductCardLayout from '../ProductCardLayout/ProductCardLayout';
 
 interface Props {
 	styleCarasoul: string;
