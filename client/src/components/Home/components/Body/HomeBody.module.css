@@ -1,15 +1,20 @@
 .bodyContainer {
 	flex-direction: column;
+	justify-content: center;
+	align-self: center;
 	height: 2000px;
-	width: 100%;
+	min-width: 1000px;
+	overflow: hidden;
 	background-color: #eaeded;
 }
 
 .styleCarasoul {
 	position: absolute;
+	align-self: center;
 }
 
 .styleCardLayout {
 	position: absolute;
+	align-self: center;
 	top: 13%;
 }

@@ -44,6 +44,18 @@ const Data = [
 		name: 'Gaming accessories',
 		image: basic,
 		link: link
+	},
+	{
+		id: '0',
+		name: 'Gaming accessories',
+		image: basic,
+		link: link
+	},
+	{
+		id: '0',
+		name: 'Gaming accessories',
+		image: basic,
+		link: link
 	}
 ];
 
@@ -58,14 +70,12 @@ const ProductCardLayout: React.FC<Props> = (props) => {
 				className={props.styleCard}
 				style={{
 					width: '100%',
-					minWidth: '1000px',
+					minWidth: '1300px',
 					backgroundColor: 'transparent',
 					display: 'flex',
 					flexDirection: 'row',
-					flexWrap: 'wrap',
-					flexBasis: '33.333333%',
-					paddingTop: '20px',
-					paddingLeft: '10px'
+					flexShrink: 1,
+					flexWrap: 'wrap'
 				}}
 			>
 				{Data.map((data, index) => {
