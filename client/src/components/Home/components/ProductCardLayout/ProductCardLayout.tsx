@@ -54,7 +54,7 @@ const ProductCardLayout: React.FC<Props> = (props) => {
 				className={props.styleCard}
 				style={{
 					position: 'absolute',
-					marginLeft: '10px',
+					paddingLeft: '20px',
 					width: '100%',
 					height: '1000px',
 					backgroundColor: 'transparent',
@@ -67,7 +67,7 @@ const ProductCardLayout: React.FC<Props> = (props) => {
 			>
 				{Data.map((data) => {
 					return (
-						<div style={{ paddingRight: '10px' }} key={data.id}>
+						<div style={{ paddingRight: '20px' }} key={data.id}>
 							<ProductCard name={data.name} link={data.link} image={data.image} />
 						</div>
 					);
