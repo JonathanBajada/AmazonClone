@@ -31,10 +31,9 @@ h2 {
 }
 
 .cardFooter {
+	margin-top: 20px;
+	align-self: auto;
 	padding: 0 20px;
-	margin-bottom: 20px;
-	position: absolute;
-	width: 100%;
 }
 
 .Header {
@@ -42,6 +41,10 @@ h2 {
 	padding-bottom: 15px;
 	margin-bottom: -10px;
 	background-color: white;
+}
+
+.headerText {
+	margin-left: 18px;
 }
 
 .imageContainer {
