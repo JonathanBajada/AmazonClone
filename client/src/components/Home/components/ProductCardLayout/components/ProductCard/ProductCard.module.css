@@ -18,6 +18,7 @@ h2 {
 	height: 420px;
 	min-height: 420px;
 	min-width: 290px;
+	margin-bottom: 20px;
 	flex: 1 0 21%;
 }
 
