@@ -32,30 +32,6 @@ const Data = [
 		name: 'Oculus',
 		image: oculus,
 		link: link
-	},
-	{
-		id: '0',
-		name: 'Beauty picks',
-		image: beauty,
-		link: link
-	},
-	{
-		id: '0',
-		name: 'Gaming accessories',
-		image: basic,
-		link: link
-	},
-	{
-		id: '0',
-		name: 'Gaming accessories',
-		image: basic,
-		link: link
-	},
-	{
-		id: '0',
-		name: 'Gaming accessories',
-		image: basic,
-		link: link
 	}
 ];
 
@@ -69,13 +45,14 @@ const ProductCardLayout: React.FC<Props> = (props) => {
 			<div
 				className={props.styleCard}
 				style={{
-					width: '100%',
-					minWidth: '1300px',
+					position: 'relative',
+					minWidth: '1500px',
 					backgroundColor: 'transparent',
+
 					display: 'flex',
 					flexDirection: 'row',
-					flexShrink: 1,
-					flexWrap: 'wrap'
+					flexWrap: 'wrap',
+					alignItems: 'center'
 				}}
 			>
 				{Data.map((data, index) => {
