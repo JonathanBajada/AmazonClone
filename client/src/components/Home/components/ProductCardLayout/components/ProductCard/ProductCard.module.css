@@ -1,3 +1,10 @@
+a {
+	text-decoration: none;
+	color: #007185;
+	margin-left: 36px;
+	align-self: center;
+}
+
 h2 {
 	font-weight: 700;
 	font-size: 24px;
@@ -16,7 +23,7 @@ h2 {
 
 .cardImage {
 	align-self: center;
-	width: 266.67px;
+	width: 333px;
 	height: 304px;
 }
 
