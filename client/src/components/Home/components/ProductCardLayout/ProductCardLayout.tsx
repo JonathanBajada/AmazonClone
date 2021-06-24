@@ -43,16 +43,23 @@ const Data = [
 	}
 ];
 
-const ProductCardLayout = () => {
+interface Props {
+	styleCard: string;
+}
+
+const ProductCardLayout: React.FC<Props> = (props) => {
 	return (
 		<Fragment>
 			<div
+				className={props.styleCard}
 				style={{
+					position: 'absolute',
 					marginLeft: '10px',
 					width: '100%',
 					height: '1000px',
 					backgroundColor: 'transparent',
 					display: 'flex',
+					flexDirection: 'row',
 					flexBasis: '33.333333%',
 					flexWrap: 'wrap',
 					flexShrink: 0

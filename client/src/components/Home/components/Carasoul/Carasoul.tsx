@@ -6,10 +6,14 @@ import beautyHeader from './img/BeautyHeader.jpg';
 import electronicsHeader from './img/ElectronicsHeader.jpg';
 import shopHeader from './img/ShopHeader.jpg';
 import toysHeader from './img/ToysHeader.jpg';
+import basic from '../ProductCardLayout/components/ProductCard/img/basics.jpg';
+import ProductCardLayout from '../ProductCardLayout/ProductCardLayout';
 
-interface Props {}
+interface Props {
+	styleCarasoul: string;
+}
 
-const Carasoul: React.FC<Props> = () => {
+const Carasoul: React.FC<Props> = (props) => {
 	const imgArray = [ shopHeader, beautyHeader, electronicsHeader, toysHeader ];
 	const [ clickCount, setClickCount ] = useState(0);
 
@@ -45,45 +49,47 @@ const Carasoul: React.FC<Props> = () => {
 			{/* 
 			<div className={styles.carasoulContainer} style={{ backgroundImage: `url(${headerIMG})` }}>
 			 */}
-			<div className={styles.carasoulContainer}>
-				{imgArray.map((image, index) => {
-					return (
+			<div className={props.styleCarasoul}>
+				<div className={styles.carasoulContainer}>
+					{imgArray.map((image, index) => {
+						return (
+							<div
+								className={index === clickCount ? styles.slideActive : styles.slide}
+								style={{ marginBottom: 'auto' }}
+								key={index}
+							>
+								{index === clickCount && <img src={image} className={styles.carasoulCard} />}
+							</div>
+						);
+					})}
+					<div className={styles.buttonSection}>
+						{/* Left Arrow Button*/}
 						<div
-							className={index === clickCount ? styles.slideActive : styles.slide}
-							style={{ marginBottom: 'auto' }}
-							key={index}
-						>
-							{index === clickCount && <img src={image} className={styles.carasoulCard} />}
-						</div>
-					);
-				})}
-				<div className={styles.buttonSection}>
-					{/* Left Arrow Button*/}
-					<div
-						onClick={() => {
-							slideLeft();
-						}}
-						className={styles.leftArrow}
-					>
-						<div
-							style={{
-								display: 'flex',
-								alignSelf: 'center'
+							onClick={() => {
+								slideLeft();
 							}}
+							className={styles.leftArrow}
 						>
-							<BsChevronLeft size={40} style={{ marginRight: '9px' }} />
+							<div
+								style={{
+									display: 'flex',
+									alignSelf: 'center'
+								}}
+							>
+								<BsChevronLeft size={40} style={{ marginRight: '9px' }} />
+							</div>
 						</div>
-					</div>
 
-					{/* Right Arrow Button*/}
-					<div
-						onClick={() => {
-							slideRight();
-						}}
-						className={styles.rightArrow}
-					>
-						<div style={{ display: 'flex', alignSelf: 'center' }}>
-							<BsChevronRight size={40} style={{ marginLeft: '9px' }} />
+						{/* Right Arrow Button*/}
+						<div
+							onClick={() => {
+								slideRight();
+							}}
+							className={styles.rightArrow}
+						>
+							<div style={{ display: 'flex', alignSelf: 'center' }}>
+								<BsChevronRight size={40} style={{ marginLeft: '9px' }} />
+							</div>
 						</div>
 					</div>
 				</div>
