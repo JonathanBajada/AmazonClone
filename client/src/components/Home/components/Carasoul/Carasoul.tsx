@@ -14,7 +14,16 @@ interface Props {
 }
 
 const Carasoul: React.FC<Props> = (props) => {
+	const focused = {
+		boxShadow: 'inset 0 0 0 2px #fff, inset 0 0 0 4px #008296'
+	};
+
+	const unfocused = {
+		boxShadow: 'none'
+	};
 	const imgArray = [ shopHeader, beautyHeader, electronicsHeader, toysHeader ];
+	const [ leftFocus, setLeftFocus ] = useState(unfocused);
+	const [ rightFocus, setRightFocus ] = useState(unfocused);
 	const [ clickCount, setClickCount ] = useState(0);
 
 	const slideLeft = () => {
@@ -65,10 +74,18 @@ const Carasoul: React.FC<Props> = (props) => {
 					<div className={styles.buttonSection}>
 						{/* Left Arrow Button*/}
 						<div
+							tabIndex={1}
 							onClick={() => {
 								slideLeft();
 							}}
+							onFocus={() => {
+								setLeftFocus(focused);
+							}}
+							onBlur={() => {
+								setLeftFocus(unfocused);
+							}}
 							className={styles.leftArrow}
+							style={leftFocus}
 						>
 							<div className={styles.arrowIMG}>
 								<BsChevronLeft size={40} />
@@ -77,10 +94,18 @@ const Carasoul: React.FC<Props> = (props) => {
 
 						{/* Right Arrow Button*/}
 						<div
+							tabIndex={2}
 							onClick={() => {
 								slideRight();
 							}}
+							onFocus={() => {
+								setRightFocus(focused);
+							}}
+							onBlur={() => {
+								setRightFocus(unfocused);
+							}}
 							className={styles.rightArrow}
+							style={rightFocus}
 						>
 							<div className={styles.arrowIMG}>
 								<BsChevronRight size={40} style={{ marginLeft: '9px' }} />
