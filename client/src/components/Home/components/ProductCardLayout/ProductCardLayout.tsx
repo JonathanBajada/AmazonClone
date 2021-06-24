@@ -56,11 +56,7 @@ const ProductCardLayout: React.FC<Props> = (props) => {
 				}}
 			>
 				{Data.map((data, index) => {
-					return (
-						<div className={styles.cardLayout} key={data.id}>
-							<ProductCard name={data.name} link={data.link} image={data.image} />
-						</div>
-					);
+					return <ProductCard name={data.name} link={data.link} image={data.image} />;
 				})}
 			</div>
 		</Fragment>

@@ -12,18 +12,30 @@ h2 {
 	margin: 0;
 }
 
-.cardContainer {
-	background-color: white;
-	width: 100%;
+.cardLayout {
+	padding-left: 10px;
+	padding-right: 10px;
 	height: 420px;
-	padding-top: 20px;
+	min-height: 420px;
+	min-width: 290px;
+	flex: 1 0 290px;
+}
+
+.cardContainer {
 	border-width: 10px;
+	background: #fff;
+	height: 100%;
+	position: relative;
+	margin-bottom: 0;
+	margin-top: 0;
+	overflow: hidden;
+	padding-top: 20px;
 }
 
 .cardImage {
 	align-self: center;
-	width: 333px;
-	height: 304px;
+	width: 310.055px;
+	height: 274.992px;
 }
 
 .cardImage:hover {
@@ -51,6 +63,24 @@ h2 {
 	display: flex;
 	justify-content: center;
 	background-color: white;
-	width: 100%;
-	height: 304px;
+	-webkit-box-flex: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+	height: 275px;
+	margin-bottom: 44px;
+	padding: 0 20px;
+}
+
+.a-cardui {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: #fff;
+	overflow: auto;
+	padding: 20px 0 15px 0;
+}
+
+@media (max-width: 1239px) .gw-card-layout[data-flow-dir="h"]>.gw-col {
+	-webkit-flex-basis: 33.33333%;
+	flex-basis: 33.33333%;
+	min-width: 33.33333%;
 }

@@ -10,15 +10,17 @@ interface Props {
 const ProductCard: React.FC<Props> = (props) => {
 	return (
 		<Fragment>
-			<div className={styles.cardContainer}>
-				<div className={styles.Header}>
-					<h2 className={styles.headerText}>{props.name}</h2>
-				</div>
-				<div className={styles.imageContainer}>
-					<img className={styles.cardImage} src={props.image} />
-				</div>
-				<div className={styles.cardFooter}>
-					<a href={props.link}>See more</a>
+			<div className={styles.cardLayout}>
+				<div className={styles.cardContainer}>
+					<div className={styles.Header}>
+						<h2 className={styles.headerText}>{props.name}</h2>
+					</div>
+					<div className={styles.imageContainer}>
+						<img className={styles.cardImage} src={props.image} />
+					</div>
+					<div className={styles.cardFooter}>
+						<a href={props.link}>See more</a>
+					</div>
 				</div>
 			</div>
 		</Fragment>

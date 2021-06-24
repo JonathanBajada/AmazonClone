@@ -2,13 +2,11 @@
 }
 
 .cardLayout {
-	margin-left: 10px;
-	margin-right: 10px;
-	margin-bottom: 20px;
-	flex-basis: auto;
 }
 
 /*
 	margin-left: 10px;
 	margin-right: 10px;
-	margin-bottom: 20px;*/
+	margin-bottom: 20px;
+    flex-basis: auto;
+    */
