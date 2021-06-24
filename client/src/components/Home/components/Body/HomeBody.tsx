@@ -8,10 +8,12 @@ const Body: React.FC = () => {
 		<Fragment>
 			<div className={styles.bodyContainer} style={{ position: 'relative' }}>
 				<Carasoul styleCarasoul={styles.styleCarasoul} />
-				<ProductCardLayout styleCard={styles.styleCardLayout} />
 			</div>
 		</Fragment>
 	);
 };
 
 export default Body;
+
+/*
+<ProductCardLayout styleCard={styles.styleCardLayout} />*/

@@ -70,13 +70,8 @@ const Carasoul: React.FC<Props> = (props) => {
 							}}
 							className={styles.leftArrow}
 						>
-							<div
-								style={{
-									display: 'flex',
-									alignSelf: 'center'
-								}}
-							>
-								<BsChevronLeft size={40} style={{ marginRight: '9px' }} />
+							<div className={styles.arrowIMG}>
+								<BsChevronLeft size={40} />
 							</div>
 						</div>
 
@@ -87,7 +82,7 @@ const Carasoul: React.FC<Props> = (props) => {
 							}}
 							className={styles.rightArrow}
 						>
-							<div style={{ display: 'flex', alignSelf: 'center' }}>
+							<div className={styles.arrowIMG}>
 								<BsChevronRight size={40} style={{ marginLeft: '9px' }} />
 							</div>
 						</div>
