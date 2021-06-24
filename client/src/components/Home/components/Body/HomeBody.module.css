@@ -10,7 +10,8 @@
 .styleCarasoul {
 	position: absolute;
 	align-self: center;
-	margin-bottom: auto;
+
+	min-width: 1500px;
 }
 
 .styleCardLayout {

@@ -1,6 +1,7 @@
 .carasoulContainer {
 	position: relative;
 	height: 600px;
+	width: 100%;
 	min-width: 1500px;
 	display: flex;
 	justify-content: center;
@@ -24,23 +25,41 @@
 	position: absolute;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
-	min-width: 1500px;
+	height: 250px;
+	width: 100%;
 	background-color: transparent;
 }
 
 .leftArrow {
 	display: flex;
-	margin-left: 30px;
+
+	border-radius: 5px;
 	margin-right: auto;
+	height: 100%;
 	width: 80px;
-	height: 250px;
+	max-height: 250px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	outline: 0;
 	background-color: transparent;
 }
 
 .leftArrow:hover {
 	cursor: pointer;
 }
+
+.leftArrow:focus,
+.leftArrow:active {
+	box-shadow: inset 0 0 0 2px #fff, inset 0 0 0 4px #008296;
+}
+
+.leftArrow:focus {
+	box-shadow: inset 0 0 0 2px #fff, inset 0 0 0 4px #008296;
+}
+
 .arrowIMG {
 	margin-top: auto;
 	margin-bottom: auto;
@@ -49,12 +68,18 @@
 }
 
 .rightArrow {
+	border-radius: 5px;
 	display: flex;
 	margin-left: auto;
-	margin-right: 30px;
+	height: 100%;
 	width: 80px;
-	height: 250px;
+	max-height: 250px;
 	background-color: transparent;
+}
+
+.rightArrow:focus,
+.rightArrow:active {
+	box-shadow: inset 0 0 0 2px #fff, inset 0 0 0 4px #008296;
 }
 
 .rightArrow:hover {
@@ -127,6 +152,7 @@
 	}
 }
 
+/*
 @media only screen and (min-width: 1500px) {
 	.leftArrow {
 		margin-left: 0;
@@ -134,4 +160,4 @@
 	.rightArrow {
 		margin-right: 0;
 	}
-}
+}*/

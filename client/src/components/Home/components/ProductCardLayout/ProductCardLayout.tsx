@@ -76,7 +76,7 @@ const ProductCardLayout: React.FC<Props> = (props) => {
 					paddingLeft: '20px',
 					paddingRight: '20px',
 					display: 'flex',
-					flexDirection: 'row',
+
 					flexWrap: 'wrap'
 				}}
 			>
