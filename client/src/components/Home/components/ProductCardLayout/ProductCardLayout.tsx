@@ -4,6 +4,7 @@ import basic from './components/ProductCard/img/basics.jpg';
 import fitAtHome from './components/ProductCard/img/fit.jpeg';
 import oculus from './components/ProductCard/img/oculus.jpg';
 import beauty from './components/ProductCard/img/beauty.jpg';
+import styles from './ProductCardLayout.module.css';
 
 let link =
 	'https://www.amazon.com/s?k=amazonbasics&pd_rd_r=819237ee-398d-42b4-96aa-30db3d603514&pd_rd_w=kiIoy&pd_rd_wg=Vjot0&pf_rd_p=9349ffb9-3aaa-476f-8532-6a4a5c3da3e7&pf_rd_r=9SGPBYPHG2S9GHYN9QB7&ref=pd_gw_unk';
@@ -56,21 +57,20 @@ const ProductCardLayout: React.FC<Props> = (props) => {
 			<div
 				className={props.styleCard}
 				style={{
-					position: 'absolute',
-					paddingLeft: '20px',
 					width: '100%',
-					height: '1000px',
+					minWidth: '1000px',
 					backgroundColor: 'transparent',
 					display: 'flex',
 					flexDirection: 'row',
-					flexBasis: '33.333333%',
 					flexWrap: 'wrap',
-					flexShrink: 0
+					flexBasis: '33.333333%',
+					paddingTop: '20px',
+					paddingLeft: '10px'
 				}}
 			>
-				{Data.map((data) => {
+				{Data.map((data, index) => {
 					return (
-						<div style={{ paddingRight: '20px' }} key={data.id}>
+						<div className={styles.cardLayout} key={data.id}>
 							<ProductCard name={data.name} link={data.link} image={data.image} />
 						</div>
 					);

@@ -26,6 +26,10 @@ h2 {
 	height: 304px;
 }
 
+.cardImage:hover {
+	cursor: pointer;
+}
+
 .cardFooter {
 	padding: 0 20px;
 	margin-bottom: 20px;

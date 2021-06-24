@@ -12,7 +12,7 @@ const ProductCard: React.FC<Props> = (props) => {
 		<Fragment>
 			<div className={styles.cardContainer}>
 				<div className={styles.Header}>
-					<h2 style={{ marginLeft: '55px' }}>{props.name}</h2>
+					<h2 style={{}}>{props.name}</h2>
 				</div>
 				<div className={styles.imageContainer}>
 					<img className={styles.cardImage} src={props.image} />
