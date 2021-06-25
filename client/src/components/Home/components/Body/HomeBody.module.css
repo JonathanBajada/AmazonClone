@@ -1,12 +1,13 @@
 .bodyContainer {
-	display: flex;
-	flex-direction: column;
-	height: 2000px;
+	background: #eaeded;
+	margin: 0 auto;
+	max-width: none;
 	min-width: 1000px;
 	overflow: hidden;
-	background-color: #eaeded;
+	height: 100vh;
 }
 
+/*
 .styleCarasoul {
 	position: absolute;
 	align-self: center;
@@ -17,3 +18,13 @@
 	align-self: center;
 	top: 13%;
 }
+
+/*
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+
+	margin: auto;
+	overflow: hidden;
+	*/

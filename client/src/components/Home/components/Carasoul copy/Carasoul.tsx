@@ -8,9 +8,7 @@ import shopHeader from './img/ShopHeader.jpg';
 import toysHeader from './img/ToysHeader.jpg';
 import { Grid } from '@material-ui/core';
 
-interface Props {
-	styleCarasoul: string;
-}
+interface Props {}
 
 const Carasoul: React.FC<Props> = (props) => {
 	const focused = {
@@ -54,28 +52,12 @@ const Carasoul: React.FC<Props> = (props) => {
 
 	return (
 		<Fragment>
-			{/* 
-			<div className={styles.carasoulContainer} style={{ backgroundImage: `url(${headerIMG})` }}>
-			 */}
-
-			<div className={props.styleCarasoul}>
-				<div className={styles.carasoulContainer}>
-					{/*
-					{imgArray.map((image, index) => {
-						return (
+			<div className={styles.root}>
+				<Grid className={styles.outerDivButton} container>
+					<Grid container item xs={12}>
+						<Grid className={styles.item} item xs={6}>
 							<div
-								className={index === clickCount ? styles.slideActive : styles.slide}
-								style={{}}
-								key={index}
-							>
-								{index === clickCount && <img src={image} className={styles.carasoulCard} />}
-							</div>
-						);
-					})}*/}
-
-					<Grid container spacing={1}>
-						<Grid container item xs={12} spacing={2}>
-							<div
+								className={styles.leftButton}
 								tabIndex={1}
 								onClick={() => {
 									slideLeft();
@@ -86,14 +68,16 @@ const Carasoul: React.FC<Props> = (props) => {
 								onBlur={() => {
 									setLeftFocus(unfocused);
 								}}
-								className={styles.leftArrow}
 								style={leftFocus}
 							>
-								<div className={styles.arrowIMG}>
+								<div className={styles.leftArrow}>
 									<BsChevronLeft size={40} />
 								</div>
 							</div>
+						</Grid>
+						<Grid className={styles.item2} item xs={6}>
 							<div
+								className={styles.rightButton}
 								tabIndex={2}
 								onClick={() => {
 									slideRight();
@@ -104,16 +88,19 @@ const Carasoul: React.FC<Props> = (props) => {
 								onBlur={() => {
 									setRightFocus(unfocused);
 								}}
-								className={styles.rightArrow}
 								style={rightFocus}
 							>
-								<div className={styles.arrowIMG}>
-									<BsChevronRight size={40} style={{ marginLeft: '9px' }} />
+								<div className={styles.rightArrow}>
+									<BsChevronRight size={40} />
 								</div>
 							</div>
 						</Grid>
 					</Grid>
-				</div>
+				</Grid>
+
+				<Grid container xs={12}>
+					<img src={shopHeader} className={styles.carasoulIMG} />
+				</Grid>
 			</div>
 		</Fragment>
 	);
@@ -121,51 +108,14 @@ const Carasoul: React.FC<Props> = (props) => {
 export default Carasoul;
 
 /*
-
-	<div className={styles.buttonContainer}>
-						<div className={styles.buttonSection}>
-						
-							<div
-								tabIndex={1}
-								onClick={() => {
-									slideLeft();
-								}}
-								onFocus={() => {
-									setLeftFocus(focused);
-								}}
-								onBlur={() => {
-									setLeftFocus(unfocused);
-								}}
-								className={styles.leftArrow}
-								style={leftFocus}
-							>
-								<div className={styles.arrowIMG}>
-									<BsChevronLeft size={40} />
-								</div>
-							</div>
-
-						
-							<div
-								tabIndex={2}
-								onClick={() => {
-									slideRight();
-								}}
-								onFocus={() => {
-									setRightFocus(focused);
-								}}
-								onBlur={() => {
-									setRightFocus(unfocused);
-								}}
-								className={styles.rightArrow}
-								style={rightFocus}
-							>
-								<div className={styles.arrowIMG}>
-									<BsChevronRight size={40} style={{ marginLeft: '9px' }} />
-								</div>
-							</div>
-						</div>
-					</div>
-
-
-
-					*/
+/*
+	<Grid container xs={12}>
+					{imgArray.map((image, index) => {
+						return (
+							index === clickCount && (
+								<img src={image} className={index === clickCount ? styles.slideActive : styles.slide} />
+							)
+						);
+					})}
+				</Grid>
+				*/
