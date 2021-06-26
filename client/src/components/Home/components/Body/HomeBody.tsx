@@ -16,6 +16,3 @@ const Body: React.FC = () => {
 };
 
 export default Body;
-
-/*
- />*/

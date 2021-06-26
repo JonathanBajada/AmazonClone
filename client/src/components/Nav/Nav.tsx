@@ -32,18 +32,8 @@ const Nav: React.FC<NavProps> = () => {
 						<div className={styles.locationIMG}>
 							<HiOutlineLocationMarker size={18} color={'white'} />
 						</div>
-						<div style={{ display: 'flex', flexDirection: 'column', alignSelf: 'center' }}>
-							<span
-								style={{
-									color: '#ccc',
-									fontSize: '12px',
-									fontWeight: 400,
-									lineHeight: '15px',
-									marginRight: 'auto'
-								}}
-							>
-								Deliver to
-							</span>
+						<div className={styles.spacingSection} style={{ alignSelf: 'center' }}>
+							<span className={styles.span1}>Deliver to</span>
 							<span className={styles.buttonTitle}>Canada</span>
 						</div>
 					</div>
@@ -55,28 +45,17 @@ const Nav: React.FC<NavProps> = () => {
 				{/* Right Nav  */}
 				<div className={styles.rightNav}>
 					<div className={styles.buttonStyle2}>
-						<div style={{ marginTop: 'auto', marginBottom: '8px', marginLeft: '4px' }}>
+						<div className={styles.rightNavButton} style={{ marginBottom: '8px!important' }}>
 							<img src={usaFlag} style={{ width: '22px', height: '15px' }} />
 						</div>
-						<div style={{ marginTop: 'auto', marginBottom: '6px', marginLeft: '4px' }}>
+						<div className={styles.rightNavButton}>
 							<AiFillCaretDown color={'#A7ACB1'} size={12} />
 						</div>
 					</div>
 					<div className={styles.buttonStyle2}>
 						<Link to={'/signin'} style={{ alignSelf: 'center' }}>
-							<div style={{ display: 'flex', flexDirection: 'column' }}>
-								<span
-									style={{
-										marginTop: 'auto',
-										marginRight: 'auto',
-										color: 'white',
-										fontSize: '12px',
-										fontWeight: 600,
-										lineHeight: '15px'
-									}}
-								>
-									Hello, Sign in
-								</span>
+							<div className={styles.spacingSection}>
+								<span className={styles.span2}>Hello, Sign in</span>
 								<span
 									className={styles.buttonTitle}
 									style={{
@@ -87,7 +66,7 @@ const Nav: React.FC<NavProps> = () => {
 								</span>
 							</div>
 						</Link>
-						<div style={{ marginTop: 'auto', marginBottom: '6px', marginLeft: '4px' }}>
+						<div className={styles.rightNavButton}>
 							<AiFillCaretDown color={'#A7ACB1'} size={12} />
 						</div>
 					</div>
@@ -102,18 +81,7 @@ const Nav: React.FC<NavProps> = () => {
 							paddingRight: '10px'
 						}}
 					>
-						<span
-							style={{
-								marginTop: 'auto',
-								marginRight: 'auto',
-								color: 'white',
-								fontSize: '12px',
-								fontWeight: 600,
-								lineHeight: '15px'
-							}}
-						>
-							Returns
-						</span>
+						<span className={styles.span2}>Returns</span>
 						<span
 							className={styles.buttonTitle}
 							style={{
@@ -128,12 +96,7 @@ const Nav: React.FC<NavProps> = () => {
 						<div style={{ marginTop: 'auto', marginBottom: '6px', marginRight: '2px' }}>
 							<RiShoppingCartLine color={'white'} size={34} />
 						</div>
-						<div
-							style={{
-								display: 'flex',
-								flexDirection: 'column'
-							}}
-						>
+						<div className={styles.spacingSection}>
 							<span
 								style={{
 									color: '#FF9900',
