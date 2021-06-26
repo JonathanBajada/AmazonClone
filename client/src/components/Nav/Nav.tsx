@@ -115,20 +115,17 @@ const Nav: React.FC<NavProps> = () => {
 			{/* fly out nav*/}
 			<div className={styles.flyOutAnchor}>
 				<div
+					className={styles.navFlyOut}
 					style={{
 						backgroundColor: 'white',
-						width: '164px',
+						width: '164.75px',
 						height: '86px',
-						display: 'flex',
-						justifyContent: 'center'
+						display: 'flex'
 					}}
 				>
 					<Link to="/signin">
 						<div className={styles.flyOutButton}>
 							<span style={{ alignSelf: 'center' }}>Sign In</span>
-							<div>
-								new customer? <span>start here</span>
-							</div>
 						</div>
 					</Link>
 				</div>
