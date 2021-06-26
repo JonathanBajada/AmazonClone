@@ -54,68 +54,60 @@ const Carasoul: React.FC<Props> = (props) => {
 		<Fragment>
 			<div className={styles.root}>
 				<Grid className={styles.outerDivButton} container>
-					<Grid container item xs={12}>
-						<Grid className={styles.item} item xs={6}>
-							<div
-								className={styles.leftButton}
-								tabIndex={1}
-								onClick={() => {
-									slideLeft();
-								}}
-								onFocus={() => {
-									setLeftFocus(focused);
-								}}
-								onBlur={() => {
-									setLeftFocus(unfocused);
-								}}
-								style={leftFocus}
-							>
-								<div className={styles.leftArrow}>
-									<BsChevronLeft size={40} />
-								</div>
+					<Grid className={styles.item} item xs={6}>
+						<div
+							className={styles.leftButton}
+							tabIndex={1}
+							onClick={() => {
+								slideLeft();
+							}}
+							onFocus={() => {
+								setLeftFocus(focused);
+							}}
+							onBlur={() => {
+								setLeftFocus(unfocused);
+							}}
+							style={leftFocus}
+						>
+							<div className={styles.leftArrow}>
+								<BsChevronLeft size={40} />
 							</div>
-						</Grid>
-						<Grid className={styles.item2} item xs={6}>
-							<div
-								className={styles.rightButton}
-								tabIndex={2}
-								onClick={() => {
-									slideRight();
-								}}
-								onFocus={() => {
-									setRightFocus(focused);
-								}}
-								onBlur={() => {
-									setRightFocus(unfocused);
-								}}
-								style={rightFocus}
-							>
-								<div className={styles.rightArrow}>
-									<BsChevronRight size={40} />
-								</div>
+						</div>
+					</Grid>
+					<Grid className={styles.item2} item xs={6}>
+						<div
+							className={styles.rightButton}
+							tabIndex={2}
+							onClick={() => {
+								slideRight();
+							}}
+							onFocus={() => {
+								setRightFocus(focused);
+							}}
+							onBlur={() => {
+								setRightFocus(unfocused);
+							}}
+							style={rightFocus}
+						>
+							<div className={styles.rightArrow}>
+								<BsChevronRight size={40} />
 							</div>
-						</Grid>
+						</div>
 					</Grid>
 				</Grid>
-
-				<Grid container xs={12}>
-					<img src={shopHeader} className={styles.carasoulIMG} />
+				<Grid container>
+					{imgArray.map((image, index) => {
+						return (
+							index === clickCount && (
+								<Grid item xs={12}>
+									<img src={image} className={styles.carasoulIMG} />
+								</Grid>
+							)
+						);
+					})}
 				</Grid>
 			</div>
 		</Fragment>
 	);
 };
 export default Carasoul;
-
-/*
-/*
-	<Grid container xs={12}>
-					{imgArray.map((image, index) => {
-						return (
-							index === clickCount && (
-								<img src={image} className={index === clickCount ? styles.slideActive : styles.slide} />
-							)
-						);
-					})}
-				</Grid>
-				*/

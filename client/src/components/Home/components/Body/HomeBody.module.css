@@ -2,29 +2,5 @@
 	background: #eaeded;
 	margin: 0 auto;
 	max-width: none;
-	min-width: 1000px;
-	overflow: hidden;
 	height: 100vh;
 }
-
-/*
-.styleCarasoul {
-	position: absolute;
-	align-self: center;
-}
-
-.styleCardLayout {
-	position: absolute;
-	align-self: center;
-	top: 13%;
-}
-
-/*
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	height: 100vh;
-
-	margin: auto;
-	overflow: hidden;
-	*/
