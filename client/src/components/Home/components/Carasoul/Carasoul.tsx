@@ -7,6 +7,7 @@ import electronicsHeader from './img/ElectronicsHeader.jpg';
 import shopHeader from './img/ShopHeader.jpg';
 import toysHeader from './img/ToysHeader.jpg';
 import { Grid } from '@material-ui/core';
+import ReactCSSTransitionGroup from 'react-transition-group';
 
 interface Props {}
 
@@ -33,22 +34,37 @@ const Carasoul: React.FC<Props> = (props) => {
 
 	useEffect(() => {
 		const timer = setTimeout(() => {
-			setClickCount(clickCount === imgArray.length - 1 ? 0 : clickCount + 1);
+			//setClickCount(clickCount === imgArray.length - 1 ? 0 : clickCount + 1);
 		}, 10000);
 		return () => clearTimeout(timer);
 	});
 
+	const enter = -1500 * clickCount;
+	const stayput = 1500 * clickCount;
+
+	const stay = {};
+
+	const move = {
+		transform: `translateX(${enter}px)`,
+		transition: 'transform ease-in 0.2s'
+	};
+
 	return (
 		<Fragment>
 			<div className={styles.root}>
-				<Grid className={styles.imgContainer} container>
+				<Grid
+					className={styles.imgContainer}
+					container
+					direction="row"
+					justify="center"
+					alignItems="center"
+					wrap="nowrap"
+				>
 					{imgArray.map((image, index) => {
 						return (
-							index === clickCount && (
-								<Grid item xs={12} className={index === clickCount ? styles.slideActive : styles.slide}>
-									<img src={image} className={styles.carasoulIMG} />
-								</Grid>
-							)
+							<Grid item xs={12} style={clickCount === 0 ? stay : move}>
+								<img src={image} className={styles.carasoulIMG} />
+							</Grid>
 						);
 					})}
 				</Grid>

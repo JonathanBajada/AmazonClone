@@ -55,22 +55,19 @@ Carasoul Gallery
 */
 .imgContainer {
 	position: absolute;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: transparent;
 }
 
 .carasoulIMG {
-	width: 100%;
-	height: 100%;
-}
-
-.slide {
-	opacity: 0;
-	-webkit-animation: slideOut 0.4s forwards;
-	-moz-animation: slideOut 0.4s forwards;
-	animation: slideOut 0.4s forwards;
+	height: 600px;
+	width: 1500px;
+	margin-left: 150%;
 }
 
 .slideActive {
-	opacity: 1;
 	-webkit-animation: slideIn 0.4s forwards;
 	-moz-animation: slideIn 0.4s forwards;
 	animation: slideIn 0.4s forwards;
@@ -78,50 +75,32 @@ Carasoul Gallery
 
 @-webkit-keyframes slideIn {
 	0% {
-		transform: translateX(-1000px);
+		transform: translateX(1550px);
 	}
 	100% {
-		transform: translateX(0);
+		transform: translateX(-1500px);
 	}
 }
-@-moz-keyframes slideIn {
+@-webkit-keyframes slideIn {
 	0% {
-		transform: translateX(-1000px);
+		transform: translateX(0);
 	}
 	100% {
-		transform: translateX(0);
+		transform: translateX(-1500px);
 	}
 }
-@keyframes slideIn {
+@-webkit-keyframes slideIn {
 	0% {
-		transform: translateX(-1000px);
+		transform: translateX(0);
 	}
 	100% {
-		transform: translateX(0);
+		transform: translateX(-1500px);
 	}
 }
 
-@-webkit-keyframes slideOut {
-	0% {
-		transform: translateY(-1000px);
-	}
-	100% {
-		transform: translateY(0);
-	}
-}
-@-moz-keyframes slideOut {
-	0% {
-		transform: translateY(-1000px);
-	}
-	100% {
-		transform: translateY(0);
-	}
-}
-@keyframes slideOut {
-	0% {
-		transform: translateY(-1000px);
-	}
-	100% {
-		transform: translateY(0);
-	}
-}
+/*
+min-width: 1500px;
+	min-height: 600px;
+	width: 100%;
+	height: 100%;
+	transform: translateX(2252px); */
