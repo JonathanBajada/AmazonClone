@@ -7,7 +7,6 @@ import electronicsHeader from './img/ElectronicsHeader.jpg';
 import shopHeader from './img/ShopHeader.jpg';
 import toysHeader from './img/ToysHeader.jpg';
 import { Grid } from '@material-ui/core';
-import ReactCSSTransitionGroup from 'react-transition-group';
 
 interface Props {}
 
@@ -19,6 +18,7 @@ const Carasoul: React.FC<Props> = (props) => {
 	const unfocused = {
 		boxShadow: 'none'
 	};
+
 	const [ imgArray, setImgArray ] = useState([ shopHeader, beautyHeader, electronicsHeader, toysHeader ]);
 	const [ leftFocus, setLeftFocus ] = useState(unfocused);
 	const [ rightFocus, setRightFocus ] = useState(unfocused);
@@ -32,20 +32,18 @@ const Carasoul: React.FC<Props> = (props) => {
 		setClickCount(clickCount === imgArray.length - 1 ? 0 : clickCount + 1);
 	};
 
-	useEffect(() => {
-		const timer = setTimeout(() => {
-			//setClickCount(clickCount === imgArray.length - 1 ? 0 : clickCount + 1);
-		}, 10000);
-		return () => clearTimeout(timer);
-	});
-
-	const enter = -1500 * clickCount;
-
-	const stay = { opacity: 1 };
+	useEffect(
+		() => {
+			const timer = setTimeout(() => {
+				setClickCount(clickCount === imgArray.length - 1 ? 0 : clickCount + 1);
+			}, 10000);
+			return () => clearTimeout(timer);
+		},
+		[ clickCount ]
+	);
 
 	const move = {
-		opacity: 0,
-		transform: `translateX(${enter}px)`,
+		transform: `translateX(${1500}px)`,
 		transition: 'transform ease-in 0.5s'
 	};
 
@@ -63,9 +61,11 @@ const Carasoul: React.FC<Props> = (props) => {
 					{imgArray.map((image, index) => {
 						if (clickCount === index) {
 							return (
-								<Grid key={index} item style={clickCount === index ? stay : move}>
-									<img src={image} className={styles.carasoulIMG} />
-								</Grid>
+								<Fragment>
+									<Grid key={index} item>
+										<img src={image} className={styles.carasoulIMG} />
+									</Grid>
+								</Fragment>
 							);
 						}
 					})}
