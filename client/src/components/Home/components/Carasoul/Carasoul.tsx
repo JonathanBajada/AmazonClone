@@ -24,28 +24,16 @@ const Carasoul: React.FC<Props> = (props) => {
 	const [ clickCount, setClickCount ] = useState(0);
 
 	const slideLeft = () => {
-		if (clickCount === imgArray.length - 1) {
-			setClickCount(0);
-		} else {
-			setClickCount(clickCount + 1);
-		}
+		setClickCount(clickCount === imgArray.length - 1 ? 0 : clickCount + 1);
 	};
 
 	const slideRight = () => {
-		if (clickCount === imgArray.length - 1) {
-			setClickCount(0);
-		} else {
-			setClickCount(clickCount + 1);
-		}
+		setClickCount(clickCount === imgArray.length - 1 ? 0 : clickCount + 1);
 	};
 
 	useEffect(() => {
 		const timer = setTimeout(() => {
-			if (clickCount === imgArray.length - 1) {
-				setClickCount(0);
-			} else {
-				setClickCount(clickCount + 1);
-			}
+			setClickCount(clickCount === imgArray.length - 1 ? 0 : clickCount + 1);
 		}, 10000);
 		return () => clearTimeout(timer);
 	});
