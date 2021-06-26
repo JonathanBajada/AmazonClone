@@ -57,14 +57,14 @@ Carasoul Gallery
 	position: absolute;
 	margin: 0;
 	padding: 0;
-	overflow: hidden;
 	background-color: transparent;
 }
 
 .carasoulIMG {
 	height: 600px;
 	width: 1500px;
-	margin-left: 150%;
+	-moz-user-select: none;
+	-webkit-user-select: none;
 }
 
 .slideActive {

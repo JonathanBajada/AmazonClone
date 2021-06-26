@@ -1,4 +1,4 @@
-import React, { Fragment, useState, useEffect } from 'react';
+import React, { Fragment, useState, useEffect, useRef } from 'react';
 import { BsChevronLeft } from 'react-icons/bs';
 import { BsChevronRight } from 'react-icons/bs';
 import styles from './Carasoul.module.css';
@@ -19,13 +19,13 @@ const Carasoul: React.FC<Props> = (props) => {
 	const unfocused = {
 		boxShadow: 'none'
 	};
-	const imgArray = [ shopHeader, beautyHeader, electronicsHeader, toysHeader ];
+	const [ imgArray, setImgArray ] = useState([ shopHeader, beautyHeader, electronicsHeader, toysHeader ]);
 	const [ leftFocus, setLeftFocus ] = useState(unfocused);
 	const [ rightFocus, setRightFocus ] = useState(unfocused);
 	const [ clickCount, setClickCount ] = useState(0);
 
 	const slideLeft = () => {
-		setClickCount(clickCount === imgArray.length - 1 ? 0 : clickCount + 1);
+		setClickCount(clickCount === 0 ? imgArray.length - 1 : clickCount - 1);
 	};
 
 	const slideRight = () => {
@@ -40,13 +40,13 @@ const Carasoul: React.FC<Props> = (props) => {
 	});
 
 	const enter = -1500 * clickCount;
-	const stayput = 1500 * clickCount;
 
-	const stay = {};
+	const stay = { opacity: 1 };
 
 	const move = {
+		opacity: 0,
 		transform: `translateX(${enter}px)`,
-		transition: 'transform ease-in 0.2s'
+		transition: 'transform ease-in 0.5s'
 	};
 
 	return (
@@ -61,11 +61,13 @@ const Carasoul: React.FC<Props> = (props) => {
 					wrap="nowrap"
 				>
 					{imgArray.map((image, index) => {
-						return (
-							<Grid item xs={12} style={clickCount === 0 ? stay : move}>
-								<img src={image} className={styles.carasoulIMG} />
-							</Grid>
-						);
+						if (clickCount === index) {
+							return (
+								<Grid key={index} item style={clickCount === index ? stay : move}>
+									<img src={image} className={styles.carasoulIMG} />
+								</Grid>
+							);
+						}
 					})}
 				</Grid>
 				<Grid className={styles.outerDivButton} container>
