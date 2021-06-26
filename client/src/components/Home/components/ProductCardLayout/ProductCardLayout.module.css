@@ -1,12 +1,11 @@
-.cardContainer {
+.root {
+	flex-grow: 1;
+	height: 100vh;
+	max-height: 100%;
+	top: 260px;
+	background-color: transparent;
+	max-width: 1500px;
+	width: 100%;
+	position: absolute;
+	margin: auto;
 }
-
-.cardLayout {
-}
-
-/*
-	margin-left: 10px;
-	margin-right: 10px;
-	margin-bottom: 20px;
-    flex-basis: auto;
-    */

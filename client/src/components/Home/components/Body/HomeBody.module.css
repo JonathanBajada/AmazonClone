@@ -1,6 +1,20 @@
 .bodyContainer {
 	background: #eaeded;
 	margin: 0 auto;
-	max-width: none;
+	width: 100vw;
 	height: 100vh;
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+
+.container {
+}
+
+.styleCard {
+	position: absolute;
+}
+
+.styleCarasoul {
+	position: absolute;
 }
