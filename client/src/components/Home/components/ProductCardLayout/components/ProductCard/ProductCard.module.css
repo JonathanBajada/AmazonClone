@@ -2,6 +2,8 @@ a {
 	text-decoration: none;
 	color: #007185;
 	align-self: center;
+	-moz-user-select: none;
+	-webkit-user-select: none;
 }
 
 h2 {
@@ -37,6 +39,8 @@ h2 {
 	align-self: center;
 	width: 310.055px;
 	height: 274.992px;
+	-moz-user-select: none;
+	-webkit-user-select: none;
 }
 
 .cardImage:hover {
@@ -54,6 +58,8 @@ h2 {
 	padding-bottom: 15px;
 	margin-bottom: -10px;
 	background-color: white;
+	-moz-user-select: none;
+	-webkit-user-select: none;
 }
 
 .headerText {
