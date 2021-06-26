@@ -97,17 +97,7 @@ const Nav: React.FC<NavProps> = () => {
 							<RiShoppingCartLine color={'white'} size={34} />
 						</div>
 						<div className={styles.spacingSection}>
-							<span
-								style={{
-									color: '#FF9900',
-									alignSelf: 'center',
-									marginTop: 'auto',
-									fontWeight: 800,
-									fontSize: '15px'
-								}}
-							>
-								0
-							</span>
+							<span className={styles.span3}>0</span>
 							<span
 								className={styles.buttonTitle}
 								style={{

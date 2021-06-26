@@ -150,6 +150,14 @@
 	line-height: 15px;
 }
 
+.span3 {
+	color: #ff9900;
+	align-self: center;
+	margin-top: auto;
+	font-weight: 800;
+	font-size: 15px;
+}
+
 .spacingSection {
 	display: flex;
 	flex-direction: column;
