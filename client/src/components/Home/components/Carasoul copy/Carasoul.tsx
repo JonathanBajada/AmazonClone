@@ -53,6 +53,17 @@ const Carasoul: React.FC<Props> = (props) => {
 	return (
 		<Fragment>
 			<div className={styles.root}>
+				<Grid className={styles.imgContainer} container>
+					{imgArray.map((image, index) => {
+						return (
+							index === clickCount && (
+								<Grid item xs={12} className={index === clickCount ? styles.slideActive : styles.slide}>
+									<img src={image} className={styles.carasoulIMG} />
+								</Grid>
+							)
+						);
+					})}
+				</Grid>
 				<Grid className={styles.outerDivButton} container>
 					<Grid className={styles.item} item xs={6}>
 						<div
@@ -94,17 +105,6 @@ const Carasoul: React.FC<Props> = (props) => {
 							</div>
 						</div>
 					</Grid>
-				</Grid>
-				<Grid container>
-					{imgArray.map((image, index) => {
-						return (
-							index === clickCount && (
-								<Grid item xs={12}>
-									<img src={image} className={styles.carasoulIMG} />
-								</Grid>
-							)
-						);
-					})}
 				</Grid>
 			</div>
 		</Fragment>
