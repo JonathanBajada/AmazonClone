@@ -162,3 +162,54 @@
 	display: flex;
 	flex-direction: column;
 }
+
+.flyOutAnchor {
+	display: flex;
+	position: relative;
+	float: none;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0;
+	line-height: 0;
+	zoom: 1;
+	z-index: 100;
+}
+
+.flyOutButton {
+	display: block;
+	height: 33px;
+	margin: 0 10px 0 11px;
+	cursor: pointer;
+	outline: 0;
+	border: 1px solid;
+	border-color: #c89411 #b0820f #99710d;
+	-webkit-border-radius: 3px 3px 3px 3px;
+	-moz-border-radius: 3px 3px 3px 3px;
+	border-radius: 3px 3px 3px 3px;
+	border-radius: 0\9;
+	-webkit-box-shadow: inset 0 1px 0 0 #fcf3dc;
+	-moz-box-shadow: inset 0 1px 0 0 #fcf3dc;
+	box-shadow: inset 0 1px 0 0 #fcf3dc;
+	background: #f3cf72;
+	filter: progid:DXImageTransform.Microsoft.gradient(
+			startColorstr='#FFF8E3AD',
+			endColorstr='#FFEEBA37',
+			GradientType=0
+		);
+	background: linear-gradient(to bottom, #f8e3ad, #eeba37);
+	background: -moz-linear-gradient(top, #f8e3ad, #eeba37);
+	background: -webkit-linear-gradient(top, #f8e3ad, #eeba37);
+	background: -o-linear-gradient(top, #f8e3ad, #eeba37);
+	background: -ms-linear-gradient(top, #f8e3ad, #eeba37);
+	text-align: center;
+	line-height: 31px;
+	vertical-align: middle;
+	color: #111;
+	font-family: inherit;
+	text-decoration: none;
+	line-height: 30px;
+	font-size: 13px;
+}

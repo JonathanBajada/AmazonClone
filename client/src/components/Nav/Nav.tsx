@@ -66,6 +66,7 @@ const Nav: React.FC<NavProps> = () => {
 								</span>
 							</div>
 						</Link>
+
 						<div className={styles.rightNavButton}>
 							<AiFillCaretDown color={'#A7ACB1'} size={12} />
 						</div>
@@ -108,6 +109,28 @@ const Nav: React.FC<NavProps> = () => {
 							</span>
 						</div>
 					</div>
+				</div>
+			</div>
+
+			{/* fly out nav*/}
+			<div className={styles.flyOutAnchor}>
+				<div
+					style={{
+						backgroundColor: 'white',
+						width: '164px',
+						height: '86px',
+						display: 'flex',
+						justifyContent: 'center'
+					}}
+				>
+					<Link to="/signin">
+						<div className={styles.flyOutButton}>
+							<span style={{ alignSelf: 'center' }}>Sign In</span>
+							<div>
+								new customer? <span>start here</span>
+							</div>
+						</div>
+					</Link>
 				</div>
 			</div>
 
