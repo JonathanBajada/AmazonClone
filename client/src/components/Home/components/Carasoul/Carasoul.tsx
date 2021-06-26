@@ -8,9 +8,7 @@ import shopHeader from './img/ShopHeader.jpg';
 import toysHeader from './img/ToysHeader.jpg';
 import { Grid } from '@material-ui/core';
 
-interface Props {
-	styleCarasoul: string;
-}
+interface Props {}
 
 const Carasoul: React.FC<Props> = (props) => {
 	const focused = {
@@ -54,118 +52,62 @@ const Carasoul: React.FC<Props> = (props) => {
 
 	return (
 		<Fragment>
-			{/* 
-			<div className={styles.carasoulContainer} style={{ backgroundImage: `url(${headerIMG})` }}>
-			 */}
-
-			<div className={props.styleCarasoul}>
-				<div className={styles.carasoulContainer}>
-					{/*
+			<div className={styles.root}>
+				<Grid className={styles.imgContainer} container>
 					{imgArray.map((image, index) => {
 						return (
-							<div
-								className={index === clickCount ? styles.slideActive : styles.slide}
-								style={{}}
-								key={index}
-							>
-								{index === clickCount && <img src={image} className={styles.carasoulCard} />}
-							</div>
+							index === clickCount && (
+								<Grid item xs={12} className={index === clickCount ? styles.slideActive : styles.slide}>
+									<img src={image} className={styles.carasoulIMG} />
+								</Grid>
+							)
 						);
-					})}*/}
-
-					<Grid container spacing={1}>
-						<Grid container item xs={12} spacing={2}>
-							<div
-								tabIndex={1}
-								onClick={() => {
-									slideLeft();
-								}}
-								onFocus={() => {
-									setLeftFocus(focused);
-								}}
-								onBlur={() => {
-									setLeftFocus(unfocused);
-								}}
-								className={styles.leftArrow}
-								style={leftFocus}
-							>
-								<div className={styles.arrowIMG}>
-									<BsChevronLeft size={40} />
-								</div>
+					})}
+				</Grid>
+				<Grid className={styles.outerDivButton} container>
+					<Grid className={styles.item} item xs={6}>
+						<div
+							className={styles.leftButton}
+							tabIndex={1}
+							onClick={() => {
+								slideLeft();
+							}}
+							onFocus={() => {
+								setLeftFocus(focused);
+							}}
+							onBlur={() => {
+								setLeftFocus(unfocused);
+							}}
+							style={leftFocus}
+						>
+							<div className={styles.leftArrow}>
+								<BsChevronLeft size={40} />
 							</div>
-							<div
-								tabIndex={2}
-								onClick={() => {
-									slideRight();
-								}}
-								onFocus={() => {
-									setRightFocus(focused);
-								}}
-								onBlur={() => {
-									setRightFocus(unfocused);
-								}}
-								className={styles.rightArrow}
-								style={rightFocus}
-							>
-								<div className={styles.arrowIMG}>
-									<BsChevronRight size={40} style={{ marginLeft: '9px' }} />
-								</div>
-							</div>
-						</Grid>
+						</div>
 					</Grid>
-				</div>
+					<Grid className={styles.item2} item xs={6}>
+						<div
+							className={styles.rightButton}
+							tabIndex={2}
+							onClick={() => {
+								slideRight();
+							}}
+							onFocus={() => {
+								setRightFocus(focused);
+							}}
+							onBlur={() => {
+								setRightFocus(unfocused);
+							}}
+							style={rightFocus}
+						>
+							<div className={styles.rightArrow}>
+								<BsChevronRight size={40} />
+							</div>
+						</div>
+					</Grid>
+				</Grid>
 			</div>
 		</Fragment>
 	);
 };
 export default Carasoul;
-
-/*
-
-	<div className={styles.buttonContainer}>
-						<div className={styles.buttonSection}>
-						
-							<div
-								tabIndex={1}
-								onClick={() => {
-									slideLeft();
-								}}
-								onFocus={() => {
-									setLeftFocus(focused);
-								}}
-								onBlur={() => {
-									setLeftFocus(unfocused);
-								}}
-								className={styles.leftArrow}
-								style={leftFocus}
-							>
-								<div className={styles.arrowIMG}>
-									<BsChevronLeft size={40} />
-								</div>
-							</div>
-
-						
-							<div
-								tabIndex={2}
-								onClick={() => {
-									slideRight();
-								}}
-								onFocus={() => {
-									setRightFocus(focused);
-								}}
-								onBlur={() => {
-									setRightFocus(unfocused);
-								}}
-								className={styles.rightArrow}
-								style={rightFocus}
-							>
-								<div className={styles.arrowIMG}>
-									<BsChevronRight size={40} style={{ marginLeft: '9px' }} />
-								</div>
-							</div>
-						</div>
-					</div>
-
-
-
-					*/
