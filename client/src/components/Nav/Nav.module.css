@@ -166,7 +166,7 @@
 .navFlyOut {
 	display: none;
 	position: absolute;
-	left: 84.5%;
+
 	border-radius: 3px 3px 3px 3px;
 	position: absolute;
 	display: none;
@@ -180,6 +180,12 @@
 	-webkit-transform: translate3d(0, 0, 0);
 	font-size: 13px;
 	line-height: normal;
+
+	animation: fadeIn 1s;
+	-webkit-animation: fadeIn 1s;
+	-moz-animation: fadeIn 1s;
+	-o-animation: fadeIn 1s;
+	-ms-animation: fadeIn 1s;
 }
 
 .flyOutAnchor {
@@ -223,4 +229,49 @@
 	text-decoration: none;
 	line-height: 30px;
 	font-size: 13px;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-o-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-ms-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }

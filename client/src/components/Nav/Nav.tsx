@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './Nav.module.css';
 import amazonLogo from './img/amazonLogo.png';
 import usaFlag from './img/usa.jpg';
@@ -7,10 +7,20 @@ import { AiFillCaretDown } from 'react-icons/ai';
 import { RiShoppingCartLine } from 'react-icons/ri';
 import { Link } from 'react-router-dom';
 import SearchBar from './components/SearchBar/SearchBar';
+import { BiUpArrow } from 'react-icons/bi';
 
 interface NavProps {}
 
 const Nav: React.FC<NavProps> = () => {
+	const [ showAnchor, setShowAnchor ] = useState(true);
+
+	useEffect(() => {
+		const timer = setTimeout(() => {
+			setShowAnchor(false);
+		}, 6000);
+		return () => clearTimeout(timer);
+	}, []);
+
 	return (
 		<div>
 			{/* Top Nav  */}
@@ -113,23 +123,27 @@ const Nav: React.FC<NavProps> = () => {
 			</div>
 
 			{/* fly out nav*/}
-			<div className={styles.flyOutAnchor}>
-				<div
-					className={styles.navFlyOut}
-					style={{
-						backgroundColor: 'white',
-						width: '164.75px',
-						height: '86px',
-						display: 'flex'
-					}}
-				>
-					<Link to="/signin">
-						<div className={styles.flyOutButton}>
-							<span style={{ alignSelf: 'center' }}>Sign In</span>
-						</div>
-					</Link>
+			{showAnchor === true && (
+				<div className={styles.flyOutAnchor}>
+					<div
+						className={styles.navFlyOut}
+						style={{
+							backgroundColor: 'white',
+							width: '164.75px',
+							height: '86px',
+							display: 'flex',
+							flexShrink: 0
+						}}
+					>
+						<BiUpArrow color={'red'} />
+						<Link to="/signin">
+							<div className={styles.flyOutButton}>
+								<span style={{ alignSelf: 'center' }}>Sign In</span>
+							</div>
+						</Link>
+					</div>
 				</div>
-			</div>
+			)}
 
 			{/* Top Nav  */}
 			<div className={styles.bottomNavigation}>{/* Second header  */}</div>

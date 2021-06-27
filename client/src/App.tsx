@@ -10,6 +10,7 @@ import RegisterPage from './components/Register/RegisterPage';
 function App() {
 	return (
 		<Fragment>
+			<Route exact path="/reload" component={HomePage} />
 			<Route exact path="/" component={HomePage} />
 			<Route path="/signin" component={LoginPage} />
 			<Route path="/register" component={RegisterPage} />
